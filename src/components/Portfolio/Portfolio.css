@@ -1,0 +1,27 @@
+.portfolio-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-title {
+  margin-bottom: 1rem;
+}
+
+.projects-title {
+  margin-bottom: 1rem;
+}
+
+.java-portfolio {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.java-projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,48 @@
+.home-wrapper {
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.home-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.dev-description {
+  max-width: 35%;
+  padding: 1rem;
+}
+
+.dev-para {
+  margin-bottom: 0.5rem;
+}
+
+.profile-fig {
+  width: 35%;
+  padding: 1rem;
+}
+
+.profile-img {
+  width: 100%;
+  border-radius: 100rem;
+}
+
+.dev-buttons-section {
+  margin-top: 1rem;
+}
+
+.dev-buttons-section button {
+  padding: 1rem;
+  border-radius: 3rem;
+  background-color: #700000;
+  color:white;
+  margin-right: 1rem;
+}

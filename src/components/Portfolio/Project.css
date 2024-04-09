@@ -1,0 +1,28 @@
+.project-div {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #700000;
+  color: white;
+  border-radius: 1rem;
+}
+
+.project-fig {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.project-name {
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  font-size: 0.9rem;
+}

@@ -1,0 +1,29 @@
+.skills-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-section {
+  width: 70%;
+}
+
+.skills-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.skills-box {
+  min-width: 12%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.skills-name {
+  margin-bottom: 0.5rem;
+}
