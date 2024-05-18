@@ -19,5 +19,11 @@ ul li a {
 }
 
 .skill-icon {
-  width: 3rem;
+  width: 2.75rem;
+  transition: 0.2s linear;
+}
+
+.skill-icon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }

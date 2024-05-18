@@ -7,23 +7,25 @@
 }
 
 .skills-section {
-  width: 70%;
+  width: 80%;
 }
 
 .skills-container {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.75rem;
 }
 
 .skills-box {
   min-width: 12%;
   text-align: center;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .skills-name {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
 }

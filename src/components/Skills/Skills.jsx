@@ -8,7 +8,6 @@ import JavaScripticon from './Skills-Icons/Frontend-Icons/JavaScripticon';
 import Bootstrapicon from './Skills-Icons/Frontend-Icons/Bootstrapicon';
 import Sassicon from './Skills-Icons/Frontend-Icons/Sassicon';
 import Reacticon from './Skills-Icons/Frontend-Icons/Reacticon';
-import Nexticon from './Skills-Icons/Frontend-Icons/Nexticon';
 import Tailwindicon from './Skills-Icons/Frontend-Icons/Tailwindicon';
 
 // Backend icons
@@ -16,20 +15,26 @@ import Javaicon from './Skills-Icons/Backend-Icons/Javaicon';
 import Springicon from './Skills-Icons/Backend-Icons/Springicon';
 import MongoDBicon from './Skills-Icons/Backend-Icons/MongoDBicon';
 import Nodeicon from './Skills-Icons/Backend-Icons/Nodeicon';
+import Expressicon from './Skills-Icons/Backend-Icons/Expressicon';
 import PHPicon from './Skills-Icons/Backend-Icons/PHPicon';
 import MySQLicon from './Skills-Icons/Backend-Icons/MySQLicon';
-import Pythonicon from './Skills-Icons/Backend-Icons/Pythonicon';
-import Firebaseicon from './Skills-Icons/Backend-Icons/Firebaseicon';
 
-// Devtools icons
-import Viteicon from './Skills-Icons/Devtools-Icons/Viteicon';
-import Postmanicon from './Skills-Icons/Devtools-Icons/Postmanicon';
-import Giticon from './Skills-Icons/Devtools-Icons/Giticon';
-import Webpackicon from './Skills-Icons/Devtools-Icons/Webpackicon';
-import Wordpressicon from './Skills-Icons/Devtools-Icons/Wordpressicon';
-import Nodemonicon from './Skills-Icons/Devtools-Icons/Nodemonicon';
-import Ubuntuicon from './Skills-Icons/Devtools-Icons/Ubuntuicon';
-import Githubicon from './Skills-Icons/Devtools-Icons/Githubicon';
+// Additional icons
+import Viteicon from './Skills-Icons/Additional-Icons/Viteicon';
+import Postmanicon from './Skills-Icons/Additional-Icons/Postmanicon';
+import Giticon from './Skills-Icons/Additional-Icons/Giticon';
+import Webpackicon from './Skills-Icons/Additional-Icons/Webpackicon';
+import Wordpressicon from './Skills-Icons/Additional-Icons/Wordpressicon';
+import Firebaseicon from './Skills-Icons/Additional-Icons/Firebaseicon';
+import Reactbootstrapicon from './Skills-Icons/Frontend-Icons/Reactbootstrapicon';
+import Astroicon from './Skills-Icons/Additional-Icons/Astroicon';
+
+// Learning icons
+import Pythonicon from './Skills-Icons/Learning-icons/Pythonicon';
+import Postgreicon from './Skills-Icons/Learning-icons/Postgreicon'
+import Cicon from './Skills-Icons/Learning-icons/Cicon';
+
+
 
 function Skills() {
   return (
@@ -63,14 +68,11 @@ function Skills() {
             <Reacticon />
           </div>
           <div className='skills-box'>
-            <h4 className='skills-name'>Next.js</h4>
-            <Nexticon />
-          </div>
-          <div className='skills-box'>
             <h4 className='skills-name'>Tailwind CSS</h4>
             <Tailwindicon />
           </div>
         </section>
+        
         <h3>Backend Development</h3>
         <section className='skills-container'>
           <div className='skills-box'>
@@ -78,7 +80,7 @@ function Skills() {
             <Javaicon />
           </div>
           <div className='skills-box'>
-            <h4 className='skills-name'>Spring Boot</h4>
+            <h4 className='skills-name'>Spring</h4>
             <Springicon />
           </div>
           <div className='skills-box'>
@@ -90,6 +92,10 @@ function Skills() {
             <Nodeicon />
           </div>
           <div className='skills-box'>
+            <h4 className='skills-name'>Express</h4>
+            <Expressicon />
+          </div>
+          <div className='skills-box'>
             <h4 className='skills-name'>PHP</h4>
             <PHPicon />
           </div>
@@ -97,16 +103,10 @@ function Skills() {
             <h4 className='skills-name'>MySQL</h4>
             <MySQLicon />
           </div>
-          <div className='skills-box'>
-            <h4 className='skills-name'>Firebase</h4>
-            <Firebaseicon />
-          </div>
-          <div className='skills-box'>
-            <h4 className='skills-name'>Python</h4>
-            <Pythonicon />
-          </div>
+
         </section>
-        <h3>Preferred Development Tools</h3>
+
+        <h3>Additional Knowledge</h3>
         <section className='skills-container'>
           <div className='skills-box'>
             <h4 className='skills-name'>Vite</h4>
@@ -129,16 +129,32 @@ function Skills() {
             <Wordpressicon />
           </div>
           <div className='skills-box'>
-            <h4 className='skills-name'>Nodemon</h4>
-            <Nodemonicon />
+            <h4 className='skills-name'>Firebase</h4>
+            <Firebaseicon />
           </div>
           <div className='skills-box'>
-            <h4 className='skills-name'>Ubuntu</h4>
-            <Ubuntuicon />
+            <h4 className='skills-name'>React Bootstrap</h4>
+            <Reactbootstrapicon />
           </div>
           <div className='skills-box'>
-            <h4 className='skills-name'>GitHub</h4>
-            <Githubicon />
+            <h4 className='skills-name'>Astro</h4>
+            <Astroicon />
+          </div>
+        </section>
+
+        <h3>Learning or Improving</h3>
+        <section className='skills-container'>
+          <div className='skills-box'>
+            <h4 className='skills-name'>Python</h4>
+            <Pythonicon />
+          </div>
+          <div className='skills-box'>
+            <h4 className='skills-name'>PostgreSQL</h4>
+            <Postgreicon />
+          </div>
+          <div className='skills-box'>
+            <h4 className='skills-name'>C</h4>
+            <Cicon />
           </div>
         </section>
       </section>
