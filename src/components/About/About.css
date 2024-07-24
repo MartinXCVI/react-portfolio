@@ -1,0 +1,19 @@
+.about-wrapper {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: relative;
+}
+
+.about-wrapper::after {
+  content: '';
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  background-image: url('/images/about-bg.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
