@@ -17,7 +17,7 @@ function Home() {
           </section>
         </article>
         <figure className='profile-fig'>
-          <img src="/public/images/dev-profile-pic.png" className='profile-img' alt="Profile picture of Martín" />
+          <img src="/images/dev-profile-pic.png" className='profile-img' alt="Profile picture of Martín" />
         </figure>
       </section>
     </section>

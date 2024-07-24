@@ -14,13 +14,13 @@
   margin-bottom: 1rem;
 }
 
-.java-portfolio {
+.portfolio-section {
   width: 80%;
   display: flex;
   flex-direction: column;
 }
 
-.java-projects {
+.portfolio-projects {
   display: flex;
   justify-content: space-between;
   align-items: center;
