@@ -1,7 +1,7 @@
 import './Project.css'
 import PropTypes from 'prop-types'
 
-function Project({ title, img, description }) {
+function Project({ title, img, description, page }) {
 
   return (
     <div className='project-div'>
@@ -10,6 +10,17 @@ function Project({ title, img, description }) {
       <img src={img} className='project-img' alt={title} />
       </figure>
       <p className='project-description'>{description}</p>
+      <div className="project-links-div">
+        <a
+          className='project-link' 
+          href={page}
+          rel='noopener noreferrer' 
+          target='_blank'
+        >
+          Preview
+        </a>
+      </div>
+      
     </div>
   )
 }
@@ -17,7 +28,8 @@ function Project({ title, img, description }) {
 Project.propTypes = {
   title: PropTypes.string,
   img: PropTypes.string,
-  description: PropTypes.string
+  description: PropTypes.string,
+  page: PropTypes.string,
 }
 
 export default Project
