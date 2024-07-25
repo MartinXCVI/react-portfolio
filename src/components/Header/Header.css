@@ -28,3 +28,34 @@
 .nav-icon {
   vertical-align: middle;
 }
+
+/*---------- to 959px ----------*/
+
+@media all and (max-width: 959px) {
+
+  .heading {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-section .hero-title {
+    text-align: center;
+  }
+
+  .navigation .nav-list {
+    width: 100%;
+    flex-direction: column;
+    /* align-items: flex-start; */
+  }
+
+  .nav-list .nav-item {
+    width: 20%;
+  }
+
+}

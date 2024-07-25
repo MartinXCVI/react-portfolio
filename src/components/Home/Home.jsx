@@ -2,7 +2,7 @@ import './Home.css'
 
 function Home() {
   return (
-    <section className='home-wrapper'>
+    <section className='home-wrapper' id='home-wrapper'>
       <section className='home-section'>
         <article className='dev-description'>
           <h2 className='dev-name'>Martín Daniel Aguirre</h2>

@@ -4,7 +4,7 @@ import WordpressProjects from './WordpressProjects'
 
 function Portfolio() {
   return (
-    <section className='portfolio-wrapper'>
+    <section className='portfolio-wrapper' id='portfolio-wrapper'>
       <h2 className='portfolio-title'>Portfolio</h2>
       <section className="portfolio-section">
         <h3 className='projects-title'>Website Projects</h3>

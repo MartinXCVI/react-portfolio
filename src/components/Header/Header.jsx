@@ -16,11 +16,21 @@ function Header() {
       </section>
       <nav className='navigation'>
         <ul className='nav-list'>
-          <li className='nav-item'><IoHome /> Home</li>
-          <li className='nav-item'><BsTools /> Skills</li>
-          <li className='nav-item'><PiToolboxFill className='nav-icon' /> Portfolio</li>
-          <li className='nav-item'><FaIdCard className='nav-icon' /> About</li>
-          <li className='nav-item'><RiMailSendFill className='nav-icon' /> Contact</li>
+          <li className='nav-item'>
+            <a href='#home-wrapper'><IoHome /> Home</a>
+          </li>
+          <li className='nav-item'>
+            <a href='#skills-wrapper'><BsTools /> Skills</a>
+            </li>
+          <li className='nav-item'>
+            <a href='#portfolio-wrapper'><PiToolboxFill className='nav-icon' /> Portfolio</a>
+            </li>
+          <li className='nav-item'>
+            <a href='#about-wrapper'><FaIdCard className='nav-icon' /> About</a>
+          </li>
+          <li className='nav-item'>
+            <a href='#contact-wrapper'><RiMailSendFill className='nav-icon' /> Contact</a>
+          </li>
         </ul>
       </nav>
     </header>

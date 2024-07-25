@@ -7,7 +7,7 @@ import LearningSkills from './LearningSkills';
 
 function Skills() {
   return (
-    <section className='skills-wrapper'>
+    <section className='skills-wrapper' id='skills-wrapper'>
       <h2 className='subtitle'>Skills</h2>
       <section className='skills-section'>
         <FrontendSkills />
