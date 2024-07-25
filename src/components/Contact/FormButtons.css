@@ -1,0 +1,22 @@
+.form-buttons-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form-btn {
+  width: 10rem;
+  border-radius: 3rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.send-btn {
+  background-color: crimson;
+}
+
+.reset-btn {
+  background-color: lightgreen;
+}
