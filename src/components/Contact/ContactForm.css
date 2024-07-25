@@ -79,3 +79,12 @@
   border: 1px solid transparent;
   box-shadow: 0rem 0.1rem 0.1rem 0rem #252525;
 }
+
+.result-div {
+  margin-bottom: 1rem;
+  padding-inline: 0.25rem;
+}
+
+.result-msg {
+  font-size: 0.9rem;
+}

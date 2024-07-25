@@ -1,6 +1,8 @@
 import './ContactForm.css'
 import FormButtons from './FormButtons';
 
+import { useState } from 'react';
+
 import { FaRegUser } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
@@ -9,11 +11,39 @@ import { BiMessageDetail } from "react-icons/bi";
 
 
 const ContactForm = () => {
+
+  const [result, setResult] = useState("")
+
+  const onSubmit = async (event) => {
+    event.preventDefault()
+    setResult("Sending...")
+    const formData = new FormData(event.target)
+
+    formData.append("access_key", "205881c5-0bfa-4e93-9523-81f375f5c37d")
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json()
+
+    if (data.success) {
+      setResult("Form submitted successfully!")
+      event.target.reset()
+    } else {
+      console.log("Error", data)
+      setResult(data.message)
+    }
+  }
+
   return (
     <>
       <section className="form-wrapper">
-        <form action="" id="contact-form">
+        <form action="" id="contact-form" onSubmit={onSubmit}>
           <fieldset className="contact-field">
+            <input type="hidden" name="from_name" value="RD Portfolio" />
+            <input type="checkbox" name="botcheck" id="" style={{display: 'none'}} />
             <div className="form-div">
               <label htmlFor="fullname-input" className="form-label"><FaRegUser className='form-icon' /> Full name</label>
               <input type="text" name="fullname" id="fullname-input" />
@@ -35,6 +65,9 @@ const ContactForm = () => {
               <textarea name="textarea" id="textarea-input" rows={"5"}></textarea>
             </div>
           </fieldset>
+          <div className='result-div'>
+          <p className='result-msg'>{result}</p>
+          </div>
           <FormButtons />
         </form>
       </section>
