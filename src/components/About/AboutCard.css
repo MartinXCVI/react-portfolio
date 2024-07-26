@@ -8,6 +8,7 @@
 
 .about-card-title {
   margin-bottom: 2.5rem;
+  color: #020202;
 }
 
 .about-article {
@@ -15,7 +16,14 @@
 }
 
 .about-article p {
+  width: 95%;
   margin-bottom: 1.5rem;
+  color: #020202;
+  font-weight: 600;
+}
+
+.about-card-title, .about-article p {
+  text-shadow: 0rem 0rem 0.025rem #f6f6f6;
 }
 
 .about-btns-div {
@@ -42,3 +50,55 @@
   margin-left: 0.25rem;
 }
 
+/*---------- to 480px -----------*/
+
+@media all and (max-width: 480px) {
+
+  .about-card {
+    width: 90%;
+  }
+
+}
+
+/*---------- 481px to 767px -----------*/
+
+@media all and (min-width: 481px) and (max-width: 767px) {
+
+  .about-card {
+    width: 80%;
+  }
+
+}
+
+@media all and (max-width: 575px) {
+
+  .about-btn {
+    width: 85%;
+  }
+
+}
+
+/*---------- 575px to 767px -----------*/
+
+@media all and (min-width: 576px) and (max-width: 767px) {
+
+  .about-btn {
+    width: 75%;
+  }
+
+}
+
+/*---------- to 767px -----------*/
+
+@media all and (max-width: 767px) {
+
+  .about-btns-div {
+    flex-direction: column;
+  }
+
+  .about-btn {
+    margin-right: 0rem;
+    margin-bottom: 0.75rem;
+  }
+
+}

@@ -1,10 +1,20 @@
 .about-wrapper {
   width: 100%;
-  min-height: 90vh;
+  min-height: 95vh;
   display: flex;
   justify-content: right;
   align-items: center;
   position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.about-wrapper::before {
+  content: '';
+  inset: 0;
+  position: absolute;
+  z-index: -5;
+  background: #020202;
 }
 
 .about-wrapper::after {
@@ -16,4 +26,21 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.9;
+}
+
+/*---------- to 767px -----------*/
+
+@media all and (max-width: 959px) {
+
+  .about-wrapper {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .about-wrapper::after {
+    background-position: right;
+  }
+
 }

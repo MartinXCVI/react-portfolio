@@ -6,11 +6,14 @@
   padding: 1rem 0.75rem;
   color: #151515;
   border: 1px solid #70000070;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 .project-name {
   margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-family: "Ubuntu Condensed", sans-serif;
 }
 
 .project-fig {
@@ -25,6 +28,7 @@
 
 .project-description {
   font-size: 0.9rem;
+  font-weight: 500;
   margin-bottom: 0.75rem;
 }
 
@@ -42,4 +46,87 @@
   padding: 0.25rem 0.5rem;
   border-radius: 3rem;
   text-align: center;
+  font-size: 1.10rem;
+  font-weight: 500;
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+
+/*---------- to 375px ----------*/
+
+@media all and (max-width: 480px) {
+
+  .project-links-div {
+    flex-direction: column;
+  }
+
+  .project-link {
+    width: 100%;
+    margin-bottom: 0.7rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+}
+
+/*---------- to 480px ----------*/
+
+@media all and (max-width: 480px) {
+ 
+  .project-div {
+    width: 100%;  
+    padding: 1rem;
+  }
+
+}
+
+@media all and (min-width: 481px) and (max-width: 767px) {
+
+  .project-div {
+    width: 100%;
+  }
+
+  .project-link {
+    width: 8rem;
+  }
+
+}
+
+@media all and (max-width: 767px) {
+
+  .project-div {
+    margin-bottom: 1.5rem;
+  }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 959px) {
+
+  .project-div {
+    width: 45%;
+  }
+
+  .project-link {
+    width: 7rem;
+  }
+
+}
+
+@media all and (max-width: 1023px) {
+
+  .project-div {
+    margin-bottom: 1.5rem;
+  }  
+
+}
+
+@media all and (min-width: 960px) and (max-width: 1023px) {
+
+  .project-div {
+    width: 45%;
+  }
+
+  .project-link {
+    width: 6.5rem;
+  }
+
 }
