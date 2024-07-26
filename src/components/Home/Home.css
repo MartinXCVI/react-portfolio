@@ -1,28 +1,53 @@
 .home-wrapper {
   width: 100%;
-  min-height: 85vh;
+  min-height: 100vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .home-section {
+  width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-bottom: 3rem;
 }
 
 .dev-description {
   max-width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
 }
 
+.dev-name {
+  margin-bottom: 1rem;
+}
+
+.dev-job {
+  margin-bottom: 1rem;
+  font-family: "Ubuntu Sans Mono", monospace;
+}
+
 .dev-para {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
   margin-bottom: 0.5rem;
+  line-height: 1.35rem;
+}
+
+.dev-para:last-of-type  {
+  margin-bottom: 1.5rem;
+}
+
+.mobile-profile-fig {
+  display: none;
 }
 
 .profile-fig {
@@ -36,6 +61,10 @@
 }
 
 .dev-buttons-section {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   margin-top: 1rem;
 }
 
@@ -45,4 +74,115 @@
   background-color: #700000;
   color:white;
   margin-right: 1rem;
+}
+
+.dev-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4rem;
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 0.75rem;
+  border-radius: 3rem;
+  background-color: #700000;
+  color: #f6f6f6;
+}
+
+/*----------- to 480px ----------*/
+
+@media all and (max-width: 480px) {
+
+  .dev-description {
+    max-width: 90%;
+    width: 90%;
+  }
+
+  .mobile-profile-fig {
+    width: 75%;
+  }
+
+  .dev-para {
+    width: 100%;
+    padding-left: 0.25rem;
+  }
+
+}
+
+/*----------- 480px to 767px ----------*/
+
+@media all and (min-width: 481px) and (max-width: 767px) {
+
+  .dev-description {
+    max-width: 80%;
+    width: 80%;
+  }
+
+  .mobile-profile-fig {
+    width: 80%;
+  }
+
+}
+
+/*----------- 768px to 959px ----------*/
+
+@media all and (min-width: 768px) and (max-width: 959px) {
+
+  .dev-description {
+    max-width: 75%;
+    width: 75%;
+  }
+
+  .mobile-profile-fig {
+    width: 65%;
+  }
+
+  .dev-btn {
+    padding-inline: 2rem;
+  }
+
+}
+
+/*----------- to 959px ----------*/
+
+@media all and (max-width: 959px) {
+  
+  .home-section {
+    flex-direction: column;
+  }
+
+  /* .dev-description {
+    max-width: 50%;
+    width: 50%;
+  } */
+
+  .dev-name, .dev-job {
+    text-align: center;
+  }
+
+  .mobile-profile-fig {
+    /* width: 100%; */
+    display: flex;
+    padding: 0rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .mobile-profile-fig img {
+    width: 100%;
+  }
+
+  .desktop-profile-fig {
+    display: none;
+  }
+
+  .dev-buttons-section {
+    justify-content: space-evenly;
+  }
+
+  .dev-btn {
+    margin-right: 0rem;
+    font-size: 1.5rem;
+  }
+
 }

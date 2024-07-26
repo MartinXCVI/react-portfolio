@@ -29,6 +29,11 @@
   vertical-align: middle;
 }
 
+.nav-item a {
+  color: #f6f6f6;
+  text-decoration: none;
+}
+
 /*---------- to 959px ----------*/
 
 @media all and (max-width: 959px) {
