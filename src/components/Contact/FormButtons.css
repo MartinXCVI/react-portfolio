@@ -11,12 +11,43 @@
   padding: 0.5rem;
   text-align: center;
   font-size: 0.9rem;
+  color: #f6f6f6;
+  text-shadow: 0rem 0rem 0.1rem #252225;
 }
 
 .send-btn {
-  background-color: crimson;
+  background-color: red;
 }
 
 .reset-btn {
-  background-color: lightgreen;
+  background-color: lightslategray;
+}
+
+@media all and (max-width: 480px) {
+
+  .form-buttons-div {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .form-btn {
+    width: 100%;
+  }
+
+}
+
+@media all and (min-width: 481px) and (max-width: 767px) {
+
+  .form-btn {
+    width: 45%;
+  }
+  
+}
+
+@media all and (max-width: 767px) {
+
+  .form-btn {
+    margin-bottom: 1rem;
+  }
+
 }

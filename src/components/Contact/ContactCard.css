@@ -18,3 +18,31 @@
 .contact-article p {
   margin-bottom: 1.5rem;
 }
+
+@media all and (max-width: 480px) {
+
+  .contact-card {
+    width: 90%;
+    max-width: 90%;
+  }
+
+}
+
+@media all and (min-width: 481px) and (max-width: 767px) {
+
+  .contact-card {
+    width: 80%;
+    max-width: 80%;
+  }
+
+}
+
+@media all and (max-width: 767px) {
+
+  
+
+  .contact-article p {
+    margin-bottom: 0.75rem;
+  }
+
+}

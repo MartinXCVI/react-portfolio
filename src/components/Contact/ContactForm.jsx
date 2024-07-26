@@ -42,8 +42,8 @@ const ContactForm = () => {
       <section className="form-wrapper">
         <form action="" id="contact-form" onSubmit={onSubmit}>
           <fieldset className="contact-field">
-            <input type="hidden" name="from_name" value="RD Portfolio" />
-            <input type="checkbox" name="botcheck" id="" style={{display: 'none'}} />
+            <legend className='form-legend'>Your query is welcome</legend>
+            
             <div className="form-div">
               <label htmlFor="fullname-input" className="form-label"><FaRegUser className='form-icon' /> Full name</label>
               <input type="text" name="fullname" id="fullname-input" />
@@ -63,6 +63,8 @@ const ContactForm = () => {
             <div className="form-div">
               <label htmlFor="textarea-input" className="form-label"><BiMessageDetail className='form-icon' /> Message</label>
               <textarea name="textarea" id="textarea-input" rows={"5"}></textarea>
+              <input type="hidden" name="from_name" value="RD Portfolio" />
+            <input type="checkbox" name="botcheck" id="" style={{display: 'none'}} />
             </div>
           </fieldset>
           <div className='result-div'>
