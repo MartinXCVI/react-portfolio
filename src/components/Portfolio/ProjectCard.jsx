@@ -1,4 +1,3 @@
-import './Project.css'
 import PropTypes from 'prop-types'
 
 function Project({ title, img, description, page, repository }) {

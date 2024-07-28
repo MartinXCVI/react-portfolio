@@ -1,5 +1,5 @@
 // CSS files
-import './App.css'
+import './css/main.css'
 
 // Components
 import Header from './components/Header/Header'

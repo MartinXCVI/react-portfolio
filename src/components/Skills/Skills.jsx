@@ -1,4 +1,3 @@
-import './Skills.css'
 
 import FrontendSkills from './FrontendSkills';
 import BackendSkills from './BackendSkills';

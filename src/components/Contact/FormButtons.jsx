@@ -1,5 +1,3 @@
-import './FormButtons.css'
-
 import { GrSend } from "react-icons/gr";
 import { GiBroom } from "react-icons/gi";
 

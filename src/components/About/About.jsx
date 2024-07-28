@@ -1,4 +1,3 @@
-import './About.css'
 import AboutCard from './AboutCard'
 
 const About = () => {

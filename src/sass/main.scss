@@ -1,0 +1,34 @@
+/*     Sass Template     */
+
+// Global SCSS
+@use '../Global.scss';
+
+// Includes
+@use './includes/variables.scss';
+
+// Header
+@use '../components/Header/Header.scss';
+
+// Home 
+@use '../components/Home/Home.scss';
+
+// Skills
+@use '../components/Skills/Skills.scss';
+
+// Portfolio
+@use '../components/Portfolio/Portfolio.scss';
+@use '../components/Portfolio/Project.scss';
+
+// About
+@use '../components/About/About.scss';
+@use '../components/About/AboutCard.scss';
+
+// Contact
+@use '../components/Contact/Contact.scss';
+@use '../components/Contact/ContactCard.scss';
+@use '../components/Contact/ContactForm.scss';
+@use '../components/Contact/FormButtons.scss';
+
+// Footer
+@use '../components/Footer/DevSignature.scss';
+@use '../components/Footer/Footer.scss';

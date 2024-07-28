@@ -1,4 +1,3 @@
-import './DevSignature.css'
 import { FaGithub } from "react-icons/fa";
 
 const DevSignature = () => {

@@ -1,4 +1,3 @@
-import './Footer.css'
 import DevSignature from './DevSignature'
 
 const Footer = () => {

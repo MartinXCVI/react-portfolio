@@ -1,4 +1,3 @@
-import './Contact.css'
 import ContactForm from './ContactForm'
 import ContactCard from './ContactCard'
 

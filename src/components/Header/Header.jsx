@@ -1,4 +1,3 @@
-import './Header.css'
 
 // React icons imports
 import { IoHome } from "react-icons/io5"; // <IoHome />
