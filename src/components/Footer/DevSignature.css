@@ -1,0 +1,23 @@
+.dev-signature {
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  transition: 0.2s linear all;
+}
+
+.dev-signature:hover {
+  background-color: #700000;
+  color: #f6f6f6;
+}
+
+.dev-signature:hover .dev-github {
+  color: lightslategrey;
+}
+
+.dev-github {
+  color: #700000;
+}
+
+.dev-github:focus {
+  color: darkslategrey;
+}
+
