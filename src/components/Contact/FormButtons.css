@@ -11,16 +11,35 @@
   padding: 0.5rem;
   text-align: center;
   font-size: 0.9rem;
+  font-weight: 500;
   color: #f6f6f6;
   text-shadow: 0rem 0rem 0.1rem #252225;
+  transition: 0.2s linear all;
+  cursor: pointer;
 }
 
 .send-btn {
   background-color: red;
 }
 
+.send-btn:hover {
+  background-color: darkgoldenrod;
+}
+
+.send-btn:focus {
+  background-color: darkgoldenrod;
+}
+
 .reset-btn {
   background-color: lightslategray;
+}
+
+.reset-btn:hover {
+  background-color: darkslategray;
+}
+
+.reset-btn:focus {
+  background-color: darkslategray;
 }
 
 @media all and (max-width: 480px) {

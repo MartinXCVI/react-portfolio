@@ -32,6 +32,18 @@
 .nav-item a {
   color: #f6f6f6;
   text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 3rem;
+  transition: 0.2s linear all;
+}
+
+.nav-item a:hover {
+  color: #252525;
+  background-color: #f6f6f6;
+}
+
+.nav-item a:focus {
+  color: rgb(225, 0, 0);
 }
 
 /*---------- to 959px ----------*/

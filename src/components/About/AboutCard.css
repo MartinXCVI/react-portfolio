@@ -44,6 +44,16 @@
   border-radius: 3rem;
   background-color: #700000;
   color: #f6f6f6;
+  transition: 0.2s linear all;
+}
+
+.about-btn:hover {
+  background-color: #151515;
+}
+
+.about-btn:focus {
+  background-color: #151515;
+  color: rgb(225, 0, 0);
 }
 
 .react-icon {

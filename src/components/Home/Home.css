@@ -87,6 +87,16 @@
   border-radius: 3rem;
   background-color: #700000;
   color: #f6f6f6;
+  transition: 0.2s linear all;
+}
+
+.dev-btn:hover {
+  background-color: #151515;
+}
+
+.dev-btn:focus {
+  background-color: #151515;
+  color: rgb(225, 0, 0);
 }
 
 /*----------- to 480px ----------*/

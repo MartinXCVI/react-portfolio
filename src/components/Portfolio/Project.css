@@ -49,6 +49,16 @@
   font-size: 1.10rem;
   font-weight: 500;
   font-family: "Ubuntu Condensed", sans-serif;
+  transition: 0.2s linear all;
+}
+
+.project-link:hover {
+  background-color: #151515;
+}
+
+.project-link:focus {
+  background-color: #151515;
+  color: rgb(225, 0, 0);
 }
 
 /*---------- to 375px ----------*/
