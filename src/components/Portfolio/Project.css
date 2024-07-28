@@ -3,10 +3,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 0.75rem;
+  padding: 1rem 0.5rem;
   color: #151515;
   border: 1px solid #70000070;
   border-radius: 0.5rem;
+  box-shadow: 0rem 0.05rem 0.1rem #252525;
 }
 
 .project-name {
@@ -21,9 +22,24 @@
   margin-bottom: 0.75rem;
 }
 
+.project-fig .project-cover-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
 .project-img {
   width: 100%;
+  border: 1px solid #70000070;
   border-radius: 0.5rem;
+  transition: 0.3s linear all;
+}
+
+.project-img:hover {
+  transform: scale(1.05);
 }
 
 .project-description {

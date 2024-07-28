@@ -7,7 +7,9 @@ function Project({ title, img, description, page }) {
     <div className='project-div'>
       <h4 className='project-name'>{title}</h4>
       <figure className='project-fig'>
-      <img src={img} className='project-img' alt={title} />
+        <a className="project-cover-link" href={page} target='_blank'>
+          <img src={img} className='project-img' alt={title} />
+        </a>
       </figure>
       <p className='project-description'>{description}</p>
       <div className="project-links-div">
