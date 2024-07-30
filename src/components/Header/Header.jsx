@@ -1,3 +1,4 @@
+import { useState } from "react"
 
 // React icons imports
 import { IoHome } from "react-icons/io5"; // <IoHome />
@@ -8,13 +9,33 @@ import { RiMailSendFill } from "react-icons/ri"; // <RiMailSendFill />
 
 function Header() {
 
+  const [burgerClass, setBurgerClass] = useState('burger-span not-clicked')
+  const [menuClass, setMenuClass] = useState('menu hidden')
+  const [isMenuDisplayed, setIsMenuDisplayed] = useState(false)
+
+  const updateMenu = ()=> {
+    if(!isMenuDisplayed) {
+      setBurgerClass("burger-span clicked")
+      setMenuClass("menu visible")
+    } else {
+      setBurgerClass("burger-span not-clicked")
+      setMenuClass("menu hidden")
+    }
+    setIsMenuDisplayed(!isMenuDisplayed)
+  }
+
   return (
     <header className='heading'>
       <section className='hero-section'>
         <h1 className='hero-title'>Regular_Dev</h1>
       </section>
       <nav className='navigation'>
-        <ul className='nav-list'>
+        <div className="burger-menu" onClick={updateMenu}>
+          <span className={burgerClass}></span>
+          <span className={burgerClass}></span>
+          <span className={burgerClass}></span>
+        </div>
+        <ul className={`${menuClass} nav-list`}>
           <li className='nav-item'>
             <a href='#home-wrapper'><IoHome /> Home</a>
           </li>
@@ -31,6 +52,7 @@ function Header() {
             <a href='#contact-wrapper'><RiMailSendFill className='nav-icon' /> Contact</a>
           </li>
         </ul>
+
       </nav>
     </header>
   )
