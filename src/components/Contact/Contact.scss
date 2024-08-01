@@ -1,3 +1,7 @@
+@use '../../sass/includes/colors' as colors;
+@use '../../sass/includes/typography' as fonts;
+@use '../../sass/includes/variables' as vars;
+
 .contact-section {
   width: 100%;
   min-height: 100vh;
@@ -14,5 +18,4 @@
     justify-content: center;
     padding: 2rem 0rem;
   }
-
 }

@@ -1,3 +1,4 @@
+import './Project.scss'
 import PropTypes from 'prop-types'
 
 function Project({ title, img, description, page }) {

@@ -1,17 +1,21 @@
+@use '../../sass/includes/colors' as colors;
+@use '../../sass/includes/typography' as fonts;
+
 .heading {
-  background-color: #700000;
+  background-color: colors.$mainRed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-}
 
-.hero-section {
-  min-width: 50%;
-}
+  .hero-section {
+    min-width: 50%;
 
-.hero-title {
-  color: white;
+    .hero-title {
+      color: colors.$white;
+    } 
+  }
+
 }
 
 .navigation {
@@ -20,36 +24,40 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .nav-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: colors.$white;
+  }
+
+  .nav-icon {
+    vertical-align: middle;
+  }  
 }
 
-.nav-list {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  color: white;
+.nav-item {
+  padding: 0.25rem 0.5rem;
+
+  a {
+    color: colors.$white;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 3rem;
+    transition: 0.2s linear all;
+  
+    &:hover {
+      color: colors.$black25;
+      background-color: colors.$white;
+    }
+    &:focus {
+      color: colors.$red;
+    }
+  }
 }
 
-.nav-icon {
-  vertical-align: middle;
-}
-
-.nav-item a {
-  color: #f6f6f6;
-  text-decoration: none;
-  padding: 0.5rem 0.75rem;
-  border-radius: 3rem;
-  transition: 0.2s linear all;
-}
-
-.nav-item a:hover {
-  color: #252525;
-  background-color: #f6f6f6;
-}
-
-.nav-item a:focus {
-  color: rgb(225, 0, 0);
-}
-
+/*     KEEP RESTRUCTURING THE SASS HELL UNTIL DOMINATION     */
 
 /*---------- to 959px ----------*/
 
@@ -58,30 +66,29 @@
   .heading {
     flex-direction: column;
     justify-content: space-evenly;
-  }
 
-  .hero-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    .hero-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-  .hero-section .hero-title {
-    text-align: center;
+      .hero-title {
+        text-align: center;
+      }
+    }
   }
 
   .navigation .nav-list {
     width: 100%;
     flex-direction: column;
-    /* align-items: flex-start; */
-  }
 
-  .nav-list .nav-item {
-    width: 100%;
-    text-align: center;
-    font-size: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    .nav-item {
+      width: 100%;
+      text-align: center;
+      font-size: 1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
   }
 
   /*----- Burger menu -----*/
@@ -95,17 +102,17 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     cursor: pointer;
+
+    .burger-span {
+      width: 3rem;
+      height: 0.5rem;
+      margin-bottom: 0.25rem;
+      background-color: colors.$white;
+      border-radius: 3rem;
+    }
   }
 
-  .burger-span {
-    width: 3rem;
-    height: 0.5rem;
-    margin-bottom: 0.25rem;
-    background-color: #f6f6f6;
-    border-radius: 3rem;
-  }
-
-  .hidden {
+  .navigation .hidden {
     display: none;
   }
 
@@ -113,10 +120,10 @@
     display: flex;
   }
 
-  /*----- -----*/
+  /*----- Hamburger bars animation -----*/
 
   .burger-span.clicked:nth-child(1) {
-    transform: rotate(45deg) translate(0.7rem, 0.45rem);
+    transform: rotate(45deg) translate(0.65rem, 0.5rem);
     transition: ease-out 0.5s;
   }
 

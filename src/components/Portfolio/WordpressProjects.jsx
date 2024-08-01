@@ -1,3 +1,4 @@
+import './Project.scss'
 import WPCard from './WPCard'
 
 const WordpressProjects = () => {
@@ -20,7 +21,7 @@ const WordpressProjects = () => {
           title="Clothing Store"
           img="/images/covers/online-store-cover.webp"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          page={"https://personal-website.free.nf/"}
+          page={"https://clothing-store.free.nf/"}
         />
       </section>
     </>

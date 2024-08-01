@@ -1,4 +1,4 @@
-
+import './Portfolio.scss'
 import WebsitesProjects from './WebsitesProjects'
 import WordpressProjects from './WordpressProjects'
 

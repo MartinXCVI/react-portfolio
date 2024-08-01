@@ -1,23 +1,26 @@
+@use '../../sass/includes/colors' as colors;
+@use '../../sass/includes/typography' as fonts;
+@use '../../sass/includes/variables' as vars;
+
 .dev-signature {
   padding: 0.5rem 1rem;
   border-radius: 3rem;
-  transition: 0.2s linear all;
-}
+  transition: vars.$trs-03;
 
-.dev-signature:hover {
-  background-color: #700000;
-  color: #f6f6f6;
-}
-
-.dev-signature:hover .dev-github {
-  color: lightslategrey;
+  &:hover {
+    background-color: colors.$mainRed;
+    color: colors.$white;
+  }
+  
+  &:hover .dev-github {
+    color: colors.$slateGray;
+  }
 }
 
 .dev-github {
-  color: #700000;
-}
+  color: colors.$mainRed;
 
-.dev-github:focus {
-  color: darkslategrey;
+  &:focus {
+    color: colors.$darkSlate;
+  }
 }
-

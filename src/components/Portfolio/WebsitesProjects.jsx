@@ -1,3 +1,4 @@
+import './Project.scss'
 import ProjectCard from './ProjectCard'
 
 const WebsitesProjects = () => {

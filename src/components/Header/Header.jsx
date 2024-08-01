@@ -1,3 +1,4 @@
+import './Header.scss'
 import { useState } from "react"
 
 // React icons imports

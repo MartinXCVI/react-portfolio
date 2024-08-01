@@ -1,3 +1,7 @@
+@use '../../sass/includes/colors' as colors;
+@use '../../sass/includes/typography' as fonts;
+@use '../../sass/includes/variables' as vars;
+
 .footer-element {
   width: 100%;
   display: flex;

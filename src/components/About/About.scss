@@ -1,3 +1,7 @@
+@use '../../sass/includes/colors' as colors;
+@use '../../sass/includes/typography' as fonts;
+@use '../../sass/includes/variables' as vars;
+
 .about-wrapper {
   width: 100%;
   min-height: 95vh;
@@ -7,27 +11,26 @@
   position: relative;
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
 
-.about-wrapper::before {
-  content: '';
-  inset: 0;
-  position: absolute;
-  z-index: -5;
-  background: #020202;
-}
-
-.about-wrapper::after {
-  content: '';
-  inset: 0;
-  position: absolute;
-  z-index: -1;
-  background-image: url('/images/about-bg.webp');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  opacity: 0.9;
+  &::before {
+    content: '';
+    inset: 0;
+    position: absolute;
+    z-index: -5;
+    background: #020202;
+  }
+  &::after {
+    content: '';
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+    background-image: url('/images/about-bg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.9;
+  }
 }
 
 /*---------- to 767px -----------*/
@@ -37,10 +40,9 @@
   .about-wrapper {
     flex-direction: column;
     justify-content: space-evenly;
-  }
 
-  .about-wrapper::after {
-    background-position: right;
+    &::after {
+      background-position: right;
+    }
   }
-
 }

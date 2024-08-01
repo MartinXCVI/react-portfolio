@@ -1,3 +1,4 @@
+import './ContactForm.scss'
 import FormButtons from './FormButtons';
 
 import { useState } from 'react';
@@ -67,7 +68,7 @@ const ContactForm = () => {
             </div>
           </fieldset>
           <div className='result-div'>
-          <p className='result-msg'>{result}</p>
+            <p className='result-msg'>{result}</p>
           </div>
           <FormButtons />
         </form>

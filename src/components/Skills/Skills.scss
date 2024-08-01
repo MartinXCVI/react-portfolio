@@ -1,3 +1,7 @@
+@use '../../sass/includes/colors' as colors;
+@use '../../sass/includes/typography' as fonts;
+@use '../../sass/includes/variables' as vars;
+
 .skills-wrapper {
   min-height: 100vh;
   display: flex;
@@ -6,19 +10,19 @@
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
 
-.skills-wrapper .subtitle {
-  margin-bottom: 1.5rem;
-}
+  .subtitle {
+    margin-bottom: 1.5rem;
+  }
 
-.skills-section {
-  width: 80%;
-}
-
-.skills-section h3 {
-  font-weight: 500;
-  font-size: 1rem;
+  .skills-section {
+    width: 80%;
+    
+    h3 {
+      font-weight: 500;
+      font-size: 1rem;
+    }
+  }
 }
 
 .skills-container {
@@ -30,21 +34,20 @@
   padding-bottom: 0.25rem;
   margin-top: 0.5rem;
   margin-bottom: 1.75rem;
-  border: 1px solid #70000070;
+  border: 1px solid colors.$mainRed;
   border-radius: 0.5rem;
-  transition: 0.2s linear all;
-}
+  transition: vars.$trs-02;
 
-.skills-container:hover {
-  background-color: #700000;
-}
-
-.skills-container:hover .skills-name {
-  color: #f6f6f6;
+  &:hover {
+    background-color: colors.$mainRed;
+  }
+  &:hover .skills-name {
+    color: colors.$white;
+  }
 }
 
 .skill-icon {
-  transition: 0.5s linear all;
+  transition: vars.$trs-05;
 }
 
 .skills-box {
@@ -54,16 +57,16 @@
   margin-inline: 0.10rem;
   border: 1px solid transparent;
   border-radius: 0.75rem;
-  transition: 0.2s linear all;
-}
+  transition: vars.$trs-02;
 
-.skills-box:hover {
-  background-color: #f6f6f6;
-  border-color: #70000070;
-}
+  &:hover {
+    background-color: colors.$white;
+    border-color: colors.$weakRed;
+  }
 
-.skills-box:hover .skills-name {
-  color: #252525;
+  &:hover .skills-name {
+    color: colors.$black25;
+  }
 }
 
 .skills-name {
@@ -78,20 +81,19 @@
 
   .skills-section {
     width: 90%;
-  }
 
-  .skills-container {
-    justify-content: space-evenly;
+    .skills-container {
+      justify-content: space-evenly;
+    }
   }
 
   .skills-box {
     min-width: 25%;
-  }
 
-  .skills-name {
-    font-size: 0.8rem;
+    .skills-name {
+      font-size: 0.8rem;
+    }
   }
-
 }
 
 /*---------- 481px to 767px -----------*/
@@ -101,7 +103,6 @@
   .skills-box {
     min-width: 25%;
   }
-
 }
 
 /*--------- 768px to 959px ----------*/
@@ -111,7 +112,6 @@
   .skills-box {
     min-width: 30%;
   }
-
 }
 
 /*--------- 959px to 1023px ----------*/
@@ -121,5 +121,4 @@
   .skills-box {
     min-width: 20%;
   }
-
 }

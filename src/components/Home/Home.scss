@@ -1,3 +1,7 @@
+@use '../../sass/includes/colors' as colors;
+@use '../../sass/includes/typography' as fonts;
+@use '../../sass/includes/variables' as vars;
+
 .home-wrapper {
   width: 100%;
   min-height: 100vh;
@@ -14,36 +18,35 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 3rem;
-}
 
-.dev-description {
-  max-width: 35%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-}
+  .dev-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 
-.dev-name {
-  margin-bottom: 1rem;
-}
-
-.dev-job {
-  margin-bottom: 1rem;
-  font-family: "Ubuntu Sans Mono", monospace;
-}
-
-.dev-para {
-  width: 100%;
-  font-size: 1rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-  line-height: 1.35rem;
-}
-
-.dev-para:last-of-type  {
-  margin-bottom: 1.5rem;
+    .dev-name {
+      margin-bottom: 1rem;
+    }
+    
+    .dev-job {
+      margin-bottom: 1rem;
+      font-family: fonts.$ubuntuMono;
+    }
+    
+    .dev-para {
+      width: 100%;
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      line-height: 1.35rem;
+    }
+    
+    .dev-para:last-of-type  {
+      margin-bottom: 1.5rem;
+    }
+  }
 }
 
 .mobile-profile-fig {
@@ -53,11 +56,11 @@
 .profile-fig {
   width: 35%;
   padding: 1rem;
-}
 
-.profile-img {
-  width: 100%;
-  border-radius: 100rem;
+  .profile-img {
+    width: 100%;
+    border-radius: 100rem;
+  }
 }
 
 .dev-buttons-section {
@@ -66,14 +69,6 @@
   justify-content: flex-start;
   align-items: center;
   margin-top: 1rem;
-}
-
-.dev-buttons-section button {
-  padding: 1rem;
-  border-radius: 3rem;
-  background-color: #700000;
-  color:white;
-  margin-right: 1rem;
 }
 
 .dev-btn {
@@ -85,18 +80,16 @@
   font-size: 1.25rem;
   padding: 0.75rem;
   border-radius: 3rem;
-  background-color: #700000;
-  color: #f6f6f6;
-  transition: 0.2s linear all;
-}
-
-.dev-btn:hover {
-  background-color: #151515;
-}
-
-.dev-btn:focus {
-  background-color: #151515;
-  color: rgb(225, 0, 0);
+  background-color: colors.$mainRed;
+  color: colors.$white;
+  transition: vars.$trs-02;
+  &:hover {
+    background-color: colors.$red;
+  }
+  &:focus {
+    background-color: colors.$red;
+    color: colors.$lightGray;
+  }
 }
 
 /*----------- to 480px ----------*/
@@ -106,17 +99,16 @@
   .dev-description {
     max-width: 90%;
     width: 90%;
+
+    .dev-para {
+      width: 100%;
+      padding-left: 0.25rem;
+    }
   }
 
   .mobile-profile-fig {
     width: 75%;
   }
-
-  .dev-para {
-    width: 100%;
-    padding-left: 0.25rem;
-  }
-
 }
 
 /*----------- 480px to 767px ----------*/
@@ -131,12 +123,12 @@
   .mobile-profile-fig {
     width: 80%;
   }
-
 }
 
 /*----------- 768px to 959px ----------*/
 
 @media all and (min-width: 768px) and (max-width: 959px) {
+
 
   .dev-description {
     max-width: 75%;
@@ -161,25 +153,19 @@
     flex-direction: column;
   }
 
-  /* .dev-description {
-    max-width: 50%;
-    width: 50%;
-  } */
-
   .dev-name, .dev-job {
     text-align: center;
   }
 
   .mobile-profile-fig {
-    /* width: 100%; */
     display: flex;
     padding: 0rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-  }
 
-  .mobile-profile-fig img {
-    width: 100%;
+    img {
+      width: 100%;
+    }   
   }
 
   .desktop-profile-fig {
@@ -188,11 +174,17 @@
 
   .dev-buttons-section {
     justify-content: space-evenly;
-  }
 
-  .dev-btn {
-    margin-right: 0rem;
-    font-size: 1.5rem;
+    .dev-btn {
+      margin-right: 0rem;
+      font-size: 1.5rem;
+    }
   }
+}
 
+@media all and (min-width: 960px) {
+
+  .dev-description {
+    max-width: 40%;
+  }
 }

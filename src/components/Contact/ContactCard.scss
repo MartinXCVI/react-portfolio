@@ -1,3 +1,7 @@
+@use '../../sass/includes/colors' as colors;
+@use '../../sass/includes/typography' as fonts;
+@use '../../sass/includes/variables' as vars;
+
 .contact-card {
   width: 45%;
   max-width: 45%;
@@ -5,18 +9,18 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-}
 
-.contact-card-title {
-  margin-bottom: 2.5rem;
-}
+  .contact-card-title {
+    margin-bottom: 2.5rem;
+  }
+  
+  .contact-article {
+    margin-bottom: 2.5rem;
 
-.contact-article {
-  margin-bottom: 2.5rem;
-}
-
-.contact-article p {
-  margin-bottom: 1.5rem;
+    p {
+      margin-bottom: 1.5rem;
+    }
+  }
 }
 
 @media all and (max-width: 480px) {
@@ -25,7 +29,6 @@
     width: 90%;
     max-width: 90%;
   }
-
 }
 
 @media all and (min-width: 481px) and (max-width: 767px) {
@@ -34,15 +37,11 @@
     width: 80%;
     max-width: 80%;
   }
-
 }
 
 @media all and (max-width: 767px) {
 
-  
-
   .contact-article p {
     margin-bottom: 0.75rem;
   }
-
 }
