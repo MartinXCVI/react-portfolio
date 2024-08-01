@@ -1,5 +1,6 @@
 @use '../../sass/includes/colors' as colors;
 @use '../../sass/includes/typography' as fonts;
+@use '../../sass/includes/variables' as vars;
 
 .heading {
   background-color: colors.$mainRed;
@@ -11,11 +12,18 @@
   .hero-section {
     min-width: 50%;
 
-    .hero-title {
+    .hero-title a {
       color: colors.$white;
+      transition: vars.$trs-02;
+      padding: 0.5rem 0.75rem;
+      border-radius: 3rem;
+
+      &:hover {
+        background-color: colors.$white;
+        color: colors.$black25;
+      }
     } 
   }
-
 }
 
 .navigation {
@@ -43,6 +51,7 @@
   a {
     color: colors.$white;
     text-decoration: none;
+    font-size: 1rem;
     padding: 0.5rem 0.75rem;
     border-radius: 3rem;
     transition: 0.2s linear all;
@@ -74,6 +83,7 @@
 
       .hero-title {
         text-align: center;
+        margin-bottom: 1rem;
       }
     }
   }
@@ -88,6 +98,11 @@
       font-size: 1rem;
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;
+
+      a {
+        font-size: 1.2rem;
+        letter-spacing: 0.15rem;
+      }
     }
   }
 
@@ -104,9 +119,9 @@
     cursor: pointer;
 
     .burger-span {
-      width: 3rem;
+      width: 3.25rem;
       height: 0.5rem;
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.45rem;
       background-color: colors.$white;
       border-radius: 3rem;
     }
@@ -123,7 +138,7 @@
   /*----- Hamburger bars animation -----*/
 
   .burger-span.clicked:nth-child(1) {
-    transform: rotate(45deg) translate(0.65rem, 0.5rem);
+    transform: rotate(45deg) translate(1rem, 0.60rem);
     transition: ease-out 0.5s;
   }
 
@@ -133,13 +148,13 @@
   }
 
   .burger-span.clicked:nth-child(3) {
-    transform: rotate(135deg) translate(-0.5rem, 0.5rem);
+    transform: rotate(135deg) translate(-0.65rem, 0.45rem);
     transition: ease-out 0.5s;
   }
 
   .burger-span.not-clicked {
     transform: rotate(0) translate(0);
-    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.15s;
   }
 
 }

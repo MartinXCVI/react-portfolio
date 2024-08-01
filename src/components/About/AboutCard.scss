@@ -112,3 +112,16 @@
     }
   }
 }
+
+@media all and (max-width: 959px) {
+
+  .about-card {
+    .about-card-title, .about-article p {
+      color: colors.$white;
+      text-shadow: 0rem 0rem 0.025rem colors.$black;
+    }
+  }
+
+
+  
+}

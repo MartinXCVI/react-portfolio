@@ -72,12 +72,14 @@
 
 .form-div input {
   width: 100%;
+  font-size: 0.9rem;
   padding: 0.25rem;
   border-bottom: 1px solid colors.$weakRed;
   border-radius: 0.25rem;
   transition: 0.2s linear all;
   margin-bottom: 0.25rem;
-  background-color: #f6f6f6;
+  background-color: colors.$white;
+  color: colors.$darkGray;
 
   &:hover {
     border-bottom: 1px solid colors.$red;
@@ -86,16 +88,19 @@
     outline: 1px solid #700000;
     border-bottom: 1px solid transparent;
     box-shadow: 0rem 0.1rem 0.1rem 0rem #252525;
-    background-color: #fefefe;
+    background-color: colors.$clearWhite;
   }
 }
 
 .form-div textarea {
   width: 100%;
+  font-size: 0.9rem;
   padding: 0.5rem;
   border: 1px solid colors.$weakRed;
   border-radius: 0.25rem;
   resize: none;
+  background-color: colors.$white;
+  color: colors.$darkGray;
   transition: vars.$trs-02;
 
   &:hover {
@@ -104,6 +109,7 @@
   &:focus {
     outline: 1px solid colors.$mainRed;
     border: 1px solid transparent;
+    background-color: colors.$clearWhite;
     box-shadow: 0rem 0.1rem 0.1rem 0rem colors.$black25;
   }
 }

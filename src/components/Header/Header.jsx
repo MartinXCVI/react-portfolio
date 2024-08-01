@@ -28,7 +28,9 @@ function Header() {
   return (
     <header className='heading'>
       <section className='hero-section'>
-        <h1 className='hero-title'>Regular_Dev</h1>
+        <h1 className='hero-title'>
+          <a href='#portfolio-wrapper'>RD Portfolio</a>
+        </h1>
       </section>
       <nav className='navigation'>
         <div className="burger-menu" onClick={updateMenu}>

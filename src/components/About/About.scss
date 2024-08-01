@@ -42,7 +42,9 @@
     justify-content: space-evenly;
 
     &::after {
+      background-image: url('/images/about-bg-mobile.webp');
       background-position: right;
+      opacity: 0.4;
     }
   }
 }

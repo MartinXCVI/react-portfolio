@@ -1,5 +1,6 @@
 import './Home.scss'
 
+import { GrPersonalComputer } from "react-icons/gr";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
@@ -10,7 +11,7 @@ function Home() {
       <section className='home-section'>
         <article className='dev-description'>
           <h2 className='dev-name'>Martín Daniel Aguirre</h2>
-          <h2 className='dev-job'>Web Developer</h2>
+          <h2 className='dev-job'>Web Developer <GrPersonalComputer className='dev-job-icon' /></h2>
           <figure className='profile-fig mobile-profile-fig'>
             <img src="/images/dev-profile.webp" className='profile-img' alt="Profile picture of Martín" />
           </figure>

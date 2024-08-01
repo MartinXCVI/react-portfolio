@@ -33,6 +33,13 @@
     .dev-job {
       margin-bottom: 1rem;
       font-family: fonts.$ubuntuMono;
+      font-size: 3rem;
+      display: flex;
+      align-items: center;
+
+      .dev-job-icon {
+        padding-left: 0.25rem;
+      }
     }
     
     .dev-para {
@@ -82,6 +89,7 @@
   border-radius: 3rem;
   background-color: colors.$mainRed;
   color: colors.$white;
+  box-shadow: 0rem 0.1rem 0.1rem colors.$black25;
   transition: vars.$trs-02;
   &:hover {
     background-color: colors.$red;
@@ -89,6 +97,7 @@
   &:focus {
     background-color: colors.$red;
     color: colors.$lightGray;
+    box-shadow: 0rem 0rem 0rem colors.$black25;
   }
 }
 
@@ -96,9 +105,10 @@
 
 @media all and (max-width: 480px) {
 
-  .dev-description {
+  .home-section .dev-description {
     max-width: 90%;
     width: 90%;
+    padding: 1rem 0rem;
 
     .dev-para {
       width: 100%;
@@ -109,6 +119,18 @@
   .mobile-profile-fig {
     width: 75%;
   }
+}
+
+@media all and (max-width: 767px) {
+
+  .home-section {
+    .dev-description {
+      .dev-job {
+        font-size: 2rem;
+      }
+    }
+  }
+
 }
 
 /*----------- 480px to 767px ----------*/
@@ -156,6 +178,10 @@
   .dev-name, .dev-job {
     text-align: center;
   }
+
+
+
+
 
   .mobile-profile-fig {
     display: flex;

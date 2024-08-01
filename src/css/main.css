@@ -11,6 +11,11 @@ html {
   background-color: #f6f6f6;
 }
 
+*::selection {
+  background-color: #900000;
+  color: #f6f6f6;
+}
+
 ul li {
   list-style: none;
 }
@@ -39,7 +44,7 @@ a {
 }
 
 .heading {
-  background-color: #850000;
+  background-color: #900000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,8 +53,15 @@ a {
 .heading .hero-section {
   min-width: 50%;
 }
-.heading .hero-section .hero-title {
+.heading .hero-section .hero-title a {
   color: #f6f6f6;
+  transition: 0.2s linear all;
+  padding: 0.5rem 0.75rem;
+  border-radius: 3rem;
+}
+.heading .hero-section .hero-title a:hover {
+  background-color: #f6f6f6;
+  color: #252525;
 }
 
 .navigation {
@@ -75,6 +87,7 @@ a {
 .nav-item a {
   color: #f6f6f6;
   text-decoration: none;
+  font-size: 1rem;
   padding: 0.5rem 0.75rem;
   border-radius: 3rem;
   transition: 0.2s linear all;
@@ -101,6 +114,7 @@ a {
   }
   .heading .hero-section .hero-title {
     text-align: center;
+    margin-bottom: 1rem;
   }
   .navigation .nav-list {
     width: 100%;
@@ -112,6 +126,10 @@ a {
     font-size: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+  }
+  .navigation .nav-list .nav-item a {
+    font-size: 1.2rem;
+    letter-spacing: 0.15rem;
   }
   /*----- Burger menu -----*/
   .burger-menu {
@@ -125,9 +143,9 @@ a {
     cursor: pointer;
   }
   .burger-menu .burger-span {
-    width: 3rem;
+    width: 3.25rem;
     height: 0.5rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.45rem;
     background-color: #f6f6f6;
     border-radius: 3rem;
   }
@@ -139,7 +157,7 @@ a {
   }
   /*----- Hamburger bars animation -----*/
   .burger-span.clicked:nth-child(1) {
-    transform: rotate(45deg) translate(0.65rem, 0.5rem);
+    transform: rotate(45deg) translate(1rem, 0.6rem);
     transition: ease-out 0.5s;
   }
   .burger-span.clicked:nth-child(2) {
@@ -147,12 +165,12 @@ a {
     transition: ease-out 0.5s;
   }
   .burger-span.clicked:nth-child(3) {
-    transform: rotate(135deg) translate(-0.5rem, 0.5rem);
+    transform: rotate(135deg) translate(-0.65rem, 0.45rem);
     transition: ease-out 0.5s;
   }
   .burger-span.not-clicked {
     transform: rotate(0) translate(0);
-    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.15s;
   }
 }
 .home-wrapper {
@@ -185,6 +203,12 @@ a {
 .home-section .dev-description .dev-job {
   margin-bottom: 1rem;
   font-family: "Ubuntu Sans Mono", monospace;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+}
+.home-section .dev-description .dev-job .dev-job-icon {
+  padding-left: 0.25rem;
 }
 .home-section .dev-description .dev-para {
   width: 100%;
@@ -227,8 +251,9 @@ a {
   font-size: 1.25rem;
   padding: 0.75rem;
   border-radius: 3rem;
-  background-color: #850000;
+  background-color: #900000;
   color: #f6f6f6;
+  box-shadow: 0rem 0.1rem 0.1rem #252525;
   transition: 0.2s linear all;
 }
 .dev-btn:hover {
@@ -237,20 +262,27 @@ a {
 .dev-btn:focus {
   background-color: rgb(225, 0, 0);
   color: #dddddd;
+  box-shadow: 0rem 0rem 0rem #252525;
 }
 
 /*----------- to 480px ----------*/
 @media all and (max-width: 480px) {
-  .dev-description {
+  .home-section .dev-description {
     max-width: 90%;
     width: 90%;
+    padding: 1rem 0rem;
   }
-  .dev-description .dev-para {
+  .home-section .dev-description .dev-para {
     width: 100%;
     padding-left: 0.25rem;
   }
   .mobile-profile-fig {
     width: 75%;
+  }
+}
+@media all and (max-width: 767px) {
+  .home-section .dev-description .dev-job {
+    font-size: 2rem;
   }
 }
 /*----------- 480px to 767px ----------*/
@@ -338,12 +370,12 @@ a {
   padding-bottom: 0.25rem;
   margin-top: 0.5rem;
   margin-bottom: 1.75rem;
-  border: 1px solid #850000;
+  border: 1px solid #900000;
   border-radius: 0.5rem;
   transition: 0.2s linear all;
 }
 .skills-container:hover {
-  background-color: #850000;
+  background-color: #900000;
 }
 .skills-container:hover .skills-name {
   color: #f6f6f6;
@@ -378,10 +410,10 @@ a {
 
 /*---------- to 479px -----------*/
 @media all and (max-width: 480px) {
-  .skills-section {
+  .skills-wrapper .skills-section {
     width: 90%;
   }
-  .skills-section .skills-container {
+  .skills-wrapper .skills-section .skills-container {
     justify-content: space-evenly;
   }
   .skills-box {
@@ -519,7 +551,7 @@ a {
 
 .project-link {
   width: 6.5rem;
-  background-color: #850000;
+  background-color: #900000;
   color: #f6f6f6;
   padding: 0.25rem 0.5rem;
   border-radius: 3rem;
@@ -629,7 +661,9 @@ a {
     justify-content: space-evenly;
   }
   .about-wrapper::after {
+    background-image: url("/images/about-bg-mobile.webp");
     background-position: right;
+    opacity: 0.4;
   }
 }
 .about-card {
@@ -673,7 +707,7 @@ a {
   text-align: center;
   padding: 0.5rem;
   border-radius: 3rem;
-  background-color: #850000;
+  background-color: #900000;
   color: #f6f6f6;
   transition: 0.2s linear all;
   box-shadow: 0rem 0.1rem 0.1rem #252525;
@@ -722,6 +756,12 @@ a {
   .about-btns-div .about-btn {
     margin-right: 0rem;
     margin-bottom: 0.75rem;
+  }
+}
+@media all and (max-width: 959px) {
+  .about-card .about-card-title, .about-card .about-article p {
+    color: #f6f6f6;
+    text-shadow: 0rem 0rem 0.025rem #050505;
   }
 }
 .contact-section {
@@ -792,10 +832,10 @@ a {
   transition: 0.2s linear;
 }
 #contact-form:hover {
-  border: 1px solid #850000;
+  border: 1px solid #900000;
 }
 #contact-form:hover .contact-field {
-  border-top: 1px solid #850000;
+  border-top: 1px solid #900000;
 }
 
 .contact-field {
@@ -842,12 +882,14 @@ a {
 
 .form-div input {
   width: 100%;
+  font-size: 0.9rem;
   padding: 0.25rem;
   border-bottom: 1px solid rgba(112, 0, 0, 0.4392156863);
   border-radius: 0.25rem;
   transition: 0.2s linear all;
   margin-bottom: 0.25rem;
   background-color: #f6f6f6;
+  color: #505050;
 }
 .form-div input:hover {
   border-bottom: 1px solid rgb(225, 0, 0);
@@ -861,18 +903,22 @@ a {
 
 .form-div textarea {
   width: 100%;
+  font-size: 0.9rem;
   padding: 0.5rem;
   border: 1px solid rgba(112, 0, 0, 0.4392156863);
   border-radius: 0.25rem;
   resize: none;
+  background-color: #f6f6f6;
+  color: #505050;
   transition: 0.2s linear all;
 }
 .form-div textarea:hover {
-  border: 1px solid #850000;
+  border: 1px solid #900000;
 }
 .form-div textarea:focus {
-  outline: 1px solid #850000;
+  outline: 1px solid #900000;
   border: 1px solid transparent;
+  background-color: #fefefe;
   box-shadow: 0rem 0.1rem 0.1rem 0rem #252525;
 }
 
@@ -968,7 +1014,7 @@ a {
   transition: 0.3s linear all;
 }
 .dev-signature:hover {
-  background-color: #850000;
+  background-color: #900000;
   color: #f6f6f6;
 }
 .dev-signature:hover .dev-github {
@@ -976,7 +1022,7 @@ a {
 }
 
 .dev-github {
-  color: #850000;
+  color: #900000;
 }
 .dev-github:focus {
   color: #284444;
