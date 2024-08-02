@@ -27,19 +27,24 @@
     padding: 1rem;
 
     .dev-name {
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
     }
     
     .dev-job {
-      margin-bottom: 1rem;
+      margin-bottom: 0.25rem;
       font-family: fonts.$ubuntuMono;
-      font-size: 3rem;
+      font-size: 2.75rem;
       display: flex;
       align-items: center;
 
       .dev-job-icon {
         padding-left: 0.25rem;
       }
+    }
+
+    .dev-country {
+      font-size: 1.25rem;
     }
     
     .dev-para {
@@ -51,7 +56,24 @@
     }
     
     .dev-para:last-of-type  {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .dev-para .email-me {
+      color: colors.$mainRed;
+      transition: vars.$trs-02;
+      font-weight: 600;
+
+      &:hover {
+        color: colors.$red;
+      }
+      &:hover {
+        color: colors.$red;
+      }
+    }
+
+    .dev-name, .dev-job, .dev-country {
+      width: 100%;
     }
   }
 }
@@ -75,7 +97,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 .dev-btn {
@@ -110,6 +132,10 @@
     width: 90%;
     padding: 1rem 0rem;
 
+    .dev-name {
+      font-size: 1.1rem;
+    }
+
     .dev-para {
       width: 100%;
       padding-left: 0.25rem;
@@ -117,7 +143,7 @@
   }
 
   .mobile-profile-fig {
-    width: 75%;
+    width: 70%;
   }
 }
 
@@ -143,7 +169,7 @@
   }
 
   .mobile-profile-fig {
-    width: 80%;
+    width: 70%;
   }
 }
 
@@ -158,7 +184,7 @@
   }
 
   .mobile-profile-fig {
-    width: 65%;
+    width: 50%;
   }
 
   .dev-btn {
@@ -176,12 +202,13 @@
   }
 
   .dev-name, .dev-job {
+    justify-content: center;
     text-align: center;
   }
 
-
-
-
+  .dev-name, .dev-job, .dev-country {
+    text-align: center;
+  }
 
   .mobile-profile-fig {
     display: flex;

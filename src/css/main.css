@@ -198,17 +198,21 @@ a {
   padding: 1rem;
 }
 .home-section .dev-description .dev-name {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
 }
 .home-section .dev-description .dev-job {
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
   font-family: "Ubuntu Sans Mono", monospace;
-  font-size: 3rem;
+  font-size: 2.75rem;
   display: flex;
   align-items: center;
 }
 .home-section .dev-description .dev-job .dev-job-icon {
   padding-left: 0.25rem;
+}
+.home-section .dev-description .dev-country {
+  font-size: 1.25rem;
 }
 .home-section .dev-description .dev-para {
   width: 100%;
@@ -219,6 +223,20 @@ a {
 }
 .home-section .dev-description .dev-para:last-of-type {
   margin-bottom: 1.5rem;
+}
+.home-section .dev-description .dev-para .email-me {
+  color: #900000;
+  transition: 0.2s linear all;
+  font-weight: 600;
+}
+.home-section .dev-description .dev-para .email-me:hover {
+  color: rgb(225, 0, 0);
+}
+.home-section .dev-description .dev-para .email-me:hover {
+  color: rgb(225, 0, 0);
+}
+.home-section .dev-description .dev-name, .home-section .dev-description .dev-job, .home-section .dev-description .dev-country {
+  width: 100%;
 }
 
 .mobile-profile-fig {
@@ -272,6 +290,9 @@ a {
     width: 90%;
     padding: 1rem 0rem;
   }
+  .home-section .dev-description .dev-name {
+    font-size: 1.1rem;
+  }
   .home-section .dev-description .dev-para {
     width: 100%;
     padding-left: 0.25rem;
@@ -314,6 +335,10 @@ a {
     flex-direction: column;
   }
   .dev-name, .dev-job {
+    justify-content: center;
+    text-align: center;
+  }
+  .dev-name, .dev-job, .dev-country {
     text-align: center;
   }
   .mobile-profile-fig {
@@ -387,7 +412,6 @@ a {
 
 .skills-box {
   min-width: 12%;
-  text-align: center;
   padding: 0.25rem;
   margin-inline: 0.1rem;
   border: 1px solid transparent;
