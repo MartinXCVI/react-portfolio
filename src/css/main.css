@@ -803,7 +803,8 @@ a {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 1rem;
 }
@@ -816,21 +817,19 @@ a {
   }
 }
 .contact-card {
-  width: 45%;
-  max-width: 45%;
+  width: 65%;
+  max-width: 65%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
 }
 .contact-card .contact-card-title {
-  margin-bottom: 2.5rem;
-}
-.contact-card .contact-article {
-  margin-bottom: 2.5rem;
-}
-.contact-card .contact-article p {
   margin-bottom: 1.5rem;
+}
+.contact-card p {
+  margin-bottom: 1.5rem;
+  line-height: 1.25rem;
 }
 
 @media all and (max-width: 480px) {
@@ -846,13 +845,19 @@ a {
   }
 }
 @media all and (max-width: 767px) {
-  .contact-article p {
+  .contact-card p {
     margin-bottom: 0.75rem;
   }
 }
+@media all and (min-width: 768px) and (max-width: 959px) {
+  .contact-card {
+    width: 70%;
+    max-width: 70%;
+  }
+}
 .form-wrapper {
-  width: 45%;
-  min-width: 45%;
+  width: 60%;
+  min-width: 65%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -861,37 +866,52 @@ a {
 
 #contact-form {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   border: 1px solid rgba(112, 0, 0, 0.4392156863);
   border-radius: 0.5rem;
-  padding: 1rem;
-  transition: 0.2s linear;
+  padding: 1.25rem;
+  transition: 0.3s linear all;
 }
 #contact-form:hover {
   border: 1px solid #900000;
+  box-shadow: 0rem 0.05rem 0.1rem #252525;
 }
-#contact-form:hover .contact-field {
+#contact-form:hover .contact-fieldset {
   border-top: 1px solid #900000;
+}
+
+.contact-fieldset {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px solid rgba(112, 0, 0, 0.4392156863);
+  transition: 0.2s linear all;
+}
+.contact-fieldset .form-legend {
+  width: auto;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 1rem 0.75rem;
+  margin-bottom: 1.25rem;
 }
 
 .contact-field {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  border-top: 1px solid rgba(112, 0, 0, 0.4392156863);
-  transition: 0.2s linear all;
-}
-.contact-field .form-legend {
-  width: auto;
-  text-align: center;
-  padding: 1rem 0.75rem;
-  font-size: 1.1rem;
-  font-weight: 400;
 }
 
 .form-div {
-  width: 100%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -924,7 +944,7 @@ a {
   transition: 0.2s linear all;
   margin-bottom: 0.25rem;
   background-color: #f6f6f6;
-  color: #505050;
+  color: #650000;
 }
 .form-div input:hover {
   border-bottom: 1px solid rgb(225, 0, 0);
@@ -936,6 +956,10 @@ a {
   background-color: #fefefe;
 }
 
+.textarea-div {
+  width: 100%;
+}
+
 .form-div textarea {
   width: 100%;
   font-size: 0.9rem;
@@ -944,7 +968,7 @@ a {
   border-radius: 0.25rem;
   resize: none;
   background-color: #f6f6f6;
-  color: #505050;
+  color: #650000;
   transition: 0.2s linear all;
 }
 .form-div textarea:hover {
@@ -966,6 +990,9 @@ a {
 }
 
 @media all and (max-width: 480px) {
+  #contact-form {
+    padding: 0.35rem;
+  }
   .form-wrapper {
     width: 90%;
     min-width: 90%;
@@ -974,11 +1001,38 @@ a {
     font-size: 1.05rem;
     padding-inline: 0.5rem;
   }
+  .form-div {
+    width: 95%;
+  }
 }
 @media all and (min-width: 481px) and (max-width: 767px) {
+  #contact-form {
+    padding: 0.5rem;
+  }
   .form-wrapper {
     width: 80%;
     min-width: 80%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 959px) {
+  .form-wrapper {
+    width: 70%;
+  }
+}
+@media all and (max-width: 767px) {
+  .contact-fieldset {
+    width: 95%;
+  }
+  .contact-field {
+    flex-direction: column;
+  }
+  .form-div {
+    min-width: 100%;
+  }
+}
+@media all and (min-width: 960px) {
+  .form-label {
+    margin-bottom: 0.35rem;
   }
 }
 .form-buttons-div {
@@ -988,7 +1042,7 @@ a {
   align-items: center;
 }
 .form-buttons-div .form-btn {
-  width: 10rem;
+  width: 11rem;
   border-radius: 3rem;
   padding: 0.5rem;
   text-align: center;
@@ -1024,13 +1078,15 @@ a {
   background-color: #284444;
 }
 
+@media all and (max-width: 376px) {
+  .form-buttons-div .form-btn {
+    width: 100%;
+  }
+}
 @media all and (max-width: 480px) {
   .form-buttons-div {
     flex-direction: column;
     justify-content: center;
-  }
-  .form-btn {
-    width: 100%;
   }
 }
 @media all and (min-width: 481px) and (max-width: 767px) {

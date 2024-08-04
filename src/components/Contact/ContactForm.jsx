@@ -41,31 +41,32 @@ const ContactForm = () => {
     <>
       <section className="form-wrapper">
         <form action="" id="contact-form" onSubmit={onSubmit}>
-          <fieldset className="contact-field">
-            <legend className='form-legend'>Your query is welcome</legend>
-            
-            <div className="form-div">
-              <label htmlFor="fullname-input" className="form-label"><FaRegUser className='form-icon' /> Full name</label>
-              <input type="text" name="fullname" id="fullname-input" />
-            </div>
-            <div className="form-div">
-              <label htmlFor="email-input" className="form-label"><FiMail className='form-icon' /> Email</label>
-              <input type="email" name="email" id="email-input" />
-            </div>
-            <div className="form-div">
-              <label htmlFor="phone-input" className="form-label"><MdOutlinePhoneAndroid className='form-icon' /> Phone <span className='not-necessary-span'>{"(Not necessary)"}</span></label>
-              <input type="tel" name="phone" id="phone-input" />
-            </div>
-            <div className="form-div">
-              <label htmlFor="subject-input" className="form-label"><FaRegPenToSquare className='form-icon' /> Subject</label>
-              <input type="text" name="subject" id="subject-input" />
-            </div>
-            <div className="form-div">
-              <label htmlFor="textarea-input" className="form-label"><BiMessageDetail className='form-icon' /> Message</label>
-              <textarea name="textarea" id="textarea-input" rows={"5"}></textarea>
-              <input type="hidden" name="from_name" value="RD Portfolio" />
-            <input type="checkbox" name="botcheck" id="" style={{display: 'none'}} />
-            </div>
+          <fieldset className='contact-fieldset'>
+            <legend className='form-legend'>Your query is welcome</legend>     
+            <section className="contact-field first-form-field">
+              <div className="form-div">
+                <label htmlFor="fullname-input" className="form-label"><FaRegUser className='form-icon' /> Full name</label>
+                <input type="text" name="fullname" id="fullname-input" placeholder='Your full name' />
+              </div>
+              <div className="form-div">
+                <label htmlFor="email-input" className="form-label"><FiMail className='form-icon' /> Email</label>
+                <input type="email" name="email" id="email-input" placeholder='Your email' />
+              </div>
+              <div className="form-div">
+                <label htmlFor="phone-input" className="form-label"><MdOutlinePhoneAndroid className='form-icon' /> Phone <span className='not-necessary-span'>{"(Not necessary)"}</span></label>
+                <input type="tel" name="phone" id="phone-input" placeholder='Optionally your phone' />
+              </div>
+              <div className="form-div">
+                <label htmlFor="subject-input" className="form-label"><FaRegPenToSquare className='form-icon' /> Subject</label>
+                <input type="text" name="subject" id="subject-input" placeholder='Your subject' />
+              </div>
+              <div className="form-div textarea-div">
+                <label htmlFor="textarea-input" className="form-label"><BiMessageDetail className='form-icon' /> Message</label>
+                <textarea name="textarea" id="textarea-input" rows={"5"} placeholder='Your message'></textarea>
+                <input type="hidden" name="from_name" value="RD Portfolio" />
+              <input type="checkbox" name="botcheck" id="" style={{display: 'none'}} />
+              </div>
+            </section>
           </fieldset>
           <div className='result-div'>
             <p className='result-msg'>{result}</p>

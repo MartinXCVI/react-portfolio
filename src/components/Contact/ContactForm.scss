@@ -3,8 +3,8 @@
 @use '../../sass/includes/variables' as vars;
 
 .form-wrapper {
-  width: 45%;
-  min-width: 45%;
+  width: 60%;
+  min-width: 65%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,39 +13,54 @@
 
 #contact-form {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   border: 1px solid colors.$weakRed;
   border-radius: 0.5rem;
-  padding: 1rem;
-  transition: 0.2s linear;
+  padding: 1.25rem;
+  transition: vars.$trs-03;
 
   &:hover {
     border: 1px solid colors.$mainRed;
+    box-shadow: 0rem 0.05rem 0.1rem colors.$black25;
   }
-  &:hover .contact-field {
+  &:hover .contact-fieldset {
     border-top: 1px solid colors.$mainRed;
   }
 }
 
-.contact-field {
-  width: 100%;
+.contact-fieldset {
+  width: 95%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
+  text-align: center;
   border-top: 1px solid colors.$weakRed;
   transition: vars.$trs-02;
 
   .form-legend {
     width: auto;
     text-align: center;
-    padding: 1rem 0.75rem;
     font-size: 1.10rem;
     font-weight: 400;
+    padding: 1rem 0.75rem;
+    margin-bottom: 1.25rem;
   }
 }
 
-.form-div {
+.contact-field {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-div {
+  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,7 +94,7 @@
   transition: 0.2s linear all;
   margin-bottom: 0.25rem;
   background-color: colors.$white;
-  color: colors.$darkGray;
+  color: colors.$darkRed;
 
   &:hover {
     border-bottom: 1px solid colors.$red;
@@ -92,6 +107,10 @@
   }
 }
 
+.textarea-div {
+  width: 100%;
+}
+
 .form-div textarea {
   width: 100%;
   font-size: 0.9rem;
@@ -100,7 +119,7 @@
   border-radius: 0.25rem;
   resize: none;
   background-color: colors.$white;
-  color: colors.$darkGray;
+  color: colors.$darkRed;
   transition: vars.$trs-02;
 
   &:hover {
@@ -125,6 +144,10 @@
 
 @media all and (max-width: 480px) {
 
+  #contact-form {
+    padding: 0.35rem;
+  }
+
   .form-wrapper {
     width: 90%;
     min-width: 90%;
@@ -134,12 +157,50 @@
     font-size: 1.05rem;
     padding-inline: 0.5rem;
   }
+
+  .form-div {
+    width: 95%;
+  }
 }
 
 @media all and (min-width: 481px) and (max-width: 767px) {
 
+  #contact-form {
+    padding: 0.5rem;
+  }
+
   .form-wrapper {
     width: 80%;
     min-width: 80%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 959px) {
+
+  .form-wrapper {
+    width: 70%;
+  }
+}
+
+@media all and (max-width: 767px) {
+
+  .contact-fieldset {
+    width: 95%;
+  }
+
+  .contact-field {
+    flex-direction: column;
+  }
+
+  .form-div {
+    min-width: 100%;
+  }
+
+}
+
+@media all and (min-width: 960px) {
+
+  .form-label {
+    margin-bottom: 0.35rem;
   }
 }
