@@ -41,6 +41,9 @@
     flex-direction: column;
     justify-content: space-evenly;
 
+    &::before {
+      background: colors.$black15;
+    }
     &::after {
       background-image: url('/images/about-bg-mobile.webp');
       background-position: right;

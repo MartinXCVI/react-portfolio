@@ -679,6 +679,9 @@ a {
     flex-direction: column;
     justify-content: space-evenly;
   }
+  .about-wrapper::before {
+    background: #151515;
+  }
   .about-wrapper::after {
     background-image: url("/images/about-bg-mobile.webp");
     background-position: right;
