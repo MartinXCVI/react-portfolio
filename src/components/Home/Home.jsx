@@ -17,9 +17,10 @@ function Home() {
             <img src="/images/dev-profile.webp" className='profile-img' alt="Profile picture of Martín" />
           </figure>
           <br />
-          <p className='dev-para'>My main interest lies in <strong>frontend development</strong>, though I can also perform tasks and duties in the <em>backend</em> field.  My next goal as a developer is to reach a solid state of proficiency in both areas.</p>
-          <p className="dev-para">My <strong>professional and educational background</strong> comes from a varied combination of university studies, courses, bootcamps and self-education.</p>
-          <p className='dev-para'>Currently, I am <em>open to work</em> and to <em>freelancing</em> opportunities. If you are interested in <strong>working together</strong>, feel free to <a className='email-me' href='mailto:mdzg96@gmail.com'>email me</a> and we will make it happen. I generally like to develop under the &quot;Regular Dev&quot; alias.</p>
+          <p className='dev-para'>My main interest lies in <strong>frontend development</strong>. Nonetheless, I can also perform tasks and duties in the <em>backend</em> field.</p>
+          <p className="dev-para">My <strong>professional and educational background</strong> comes from a varied combination of university studies, courses, bootcamps and self-education. I strive for constant growth and learning.</p>
+          <p className="dev-para"></p>
+          <p className='dev-para'>Currently, I am <em>open to work</em> and to <em>freelancing</em> opportunities. If you are interested in <strong>working together</strong>, feel free to <a className='email-me' href='mailto:mdzg96@gmail.com'>email me</a> — you are more than welcome.</p>
           <section className='dev-buttons-section'>
             <a className='dev-btn' href="https://github.com/MartinXCVI/" target="_blank" title='Github'><FaGithub className='react-dev-icon' /></a>
             <a className='dev-btn' href="https://www.linkedin.com/in/martinxcvi/" target="_blank" title='LinkedIn'><FaLinkedin className='react-dev-icon' /></a>
