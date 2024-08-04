@@ -658,7 +658,7 @@ a {
   inset: 0;
   position: absolute;
   z-index: -5;
-  background: #020202;
+  background: rgba(112, 0, 0, 0.4392156863);
 }
 .about-wrapper::after {
   content: "";
@@ -682,7 +682,7 @@ a {
   .about-wrapper::after {
     background-image: url("/images/about-bg-mobile.webp");
     background-position: right;
-    opacity: 0.4;
+    opacity: 0.3;
   }
 }
 .about-card {
@@ -697,17 +697,29 @@ a {
   color: #010101;
 }
 .about-card .about-article {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 .about-card .about-article p {
   width: 95%;
   margin-bottom: 1.5rem;
   color: #010101;
   font-weight: 600;
+  line-height: 1.25rem;
 }
 
 .about-card-title, .about-article p {
-  text-shadow: 0rem 0rem 0.025rem #f6f6f6;
+  text-shadow: 0rem 0rem 0.1rem #f6f6f6;
+}
+
+.about-article .about-article-para a {
+  color: #900000;
+  transition: 0.2s linear all;
+}
+.about-article .about-article-para a:hover {
+  color: rgb(225, 0, 0);
+}
+.about-article .about-article-para a:focus {
+  color: rgb(225, 0, 0);
 }
 
 .about-btns-div {
@@ -779,8 +791,9 @@ a {
 }
 @media all and (max-width: 959px) {
   .about-card .about-card-title, .about-card .about-article p {
+    font-size: 1rem;
     color: #f6f6f6;
-    text-shadow: 0rem 0rem 0.025rem #050505;
+    text-shadow: 0rem 0rem 0.1rem #050505;
   }
 }
 .contact-section {

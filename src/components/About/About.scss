@@ -17,7 +17,7 @@
     inset: 0;
     position: absolute;
     z-index: -5;
-    background: #020202;
+    background: colors.$weakRed;
   }
   &::after {
     content: '';
@@ -44,7 +44,7 @@
     &::after {
       background-image: url('/images/about-bg-mobile.webp');
       background-position: right;
-      opacity: 0.4;
+      opacity: 0.3;
     }
   }
 }
