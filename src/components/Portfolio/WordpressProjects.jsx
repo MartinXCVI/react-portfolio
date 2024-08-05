@@ -8,19 +8,19 @@ const WordpressProjects = () => {
         <WPCard 
           title="Personal Website"
           img="/images/covers/personal-website-cover.webp"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          description="Personal website with Wordpress. Elementor building and structuring tools, Starter Templates, WPForms Lite plugin for contact form. Adventurous charm and nature-oriented aesthetic. Easily modifiable for any kind of individual porpuse."
           page={"https://personal-website.free.nf/"}
         />
         <WPCard 
           title="Travel Blog"
           img="/images/covers/wordpress-blog-cover.webp"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          description="Timeless and classic Wordpress blog for a traveler or entrepreneur. Developed with Elementor and Unlimited Elements tools. WPForms Lite for contact form, and Instagram feed integration. Naturalistic while thought-provoking design."
           page={"https://wordpress-blog.free.nf/"}
         />
         <WPCard 
           title="Clothing Store"
           img="/images/covers/online-store-cover.webp"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          description="WooCommerce website about a generic clothing store for men, women and children. Structured with Elementor, Header & Footer builder, WPForms Lite for contacting, payments via Stripe, lateral cart, easy checkout process, and custom plugins."
           page={"https://clothing-store.free.nf/"}
         />
       </section>
