@@ -17,6 +17,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  background-color: colors.$whiteSmoke;
   border: 1px solid colors.$weakRed;
   border-radius: 0.5rem;
   padding: 1.25rem;
@@ -93,7 +94,7 @@
   border-radius: 0.25rem;
   transition: 0.2s linear all;
   margin-bottom: 0.25rem;
-  background-color: colors.$white;
+  background-color: colors.$whiteSmoke;
   color: colors.$darkRed;
 
   &:hover {
@@ -118,7 +119,7 @@
   border: 1px solid colors.$weakRed;
   border-radius: 0.25rem;
   resize: none;
-  background-color: colors.$white;
+  background-color: colors.$whiteSmoke;
   color: colors.$darkRed;
   transition: vars.$trs-02;
 
