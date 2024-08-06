@@ -14,8 +14,6 @@ function Portfolio() {
         <h3 className='projects-title'>Wordpress Projects</h3>
         <WordpressProjects />
       </section>
-      
-
     </section>
   )
 }

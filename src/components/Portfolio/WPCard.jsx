@@ -1,5 +1,6 @@
 import './Project.scss'
 import PropTypes from 'prop-types'
+import { FaRegEye } from "react-icons/fa";
 
 function Project({ title, img, description, page }) {
 
@@ -19,7 +20,7 @@ function Project({ title, img, description, page }) {
           rel='noopener noreferrer' 
           target='_blank'
         >
-          Preview
+          Preview <FaRegEye className='project-link-icon' />
         </a>
       </div>
       

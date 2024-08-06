@@ -12,6 +12,11 @@
   border: 1px solid colors.$weakRed;
   border-radius: 0.5rem;
   box-shadow: 0rem 0.05rem 0.1rem colors.$black25;
+  transition: vars.$trs-03;
+
+  &:hover {
+    box-shadow: 0rem 0.1rem 0.2rem colors.$black25;
+  }
 
   .project-name {
     margin-bottom: 0.5rem;
@@ -60,13 +65,16 @@
 }
 
 .project-link {
-  width: 6.5rem;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: colors.$mainRed;
   color: colors.$white;
   padding: 0.25rem 0.5rem;
   border-radius: 3rem;
   text-align: center;
-  font-size: 1.10rem;
+  font-size: 1rem;
   font-weight: 500;
   font-family: fonts.$ubuntuCond;
   transition: vars.$trs-02;
@@ -79,6 +87,9 @@
     background-color: colors.$red;
     color: colors.$black;
     box-shadow: 0rem 0rem 0rem colors.$black25;
+  }
+  .project-link-icon {
+    margin-left: 0.25rem;
   }
 }
 

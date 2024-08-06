@@ -1,5 +1,7 @@
 import './Project.scss'
 import PropTypes from 'prop-types'
+import { FaRegEye } from "react-icons/fa";
+import { RiGitRepositoryLine } from "react-icons/ri";
 
 function Project({ title, img, description, page, repository }) {
 
@@ -19,7 +21,7 @@ function Project({ title, img, description, page, repository }) {
         rel='noopener noreferrer' 
         target='_blank'
         >
-          Preview
+          Preview <FaRegEye className='project-link-icon' />
         </a>
         <a
           className='project-link'  
@@ -27,11 +29,9 @@ function Project({ title, img, description, page, repository }) {
           rel='noopener noreferrer' 
           target='_blank'
         >
-          Repository
+          Repository <RiGitRepositoryLine className='project-link-icon' />
         </a>
       </div>
-      
-
     </div>
   )
 }
