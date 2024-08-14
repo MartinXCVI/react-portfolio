@@ -1,4 +1,3 @@
-import './Skills.scss'
 import SkillsCard from "./SkillsCard"
 
 //---- techicons.dev icons imports
@@ -6,11 +5,11 @@ import SkillsCard from "./SkillsCard"
 import Viteicon from './Skills-Icons/Additional-Icons/Viteicon';
 import Postmanicon from './Skills-Icons/Additional-Icons/Postmanicon';
 import Giticon from './Skills-Icons/Additional-Icons/Giticon';
-import Sassicon from './Skills-Icons/Frontend-Icons/Sassicon';
+import Sassicon from './Skills-Icons/Additional-Icons/Sassicon';
 import Wordpressicon from './Skills-Icons/Additional-Icons/Wordpressicon';
 import Firebaseicon from './Skills-Icons/Additional-Icons/Firebaseicon';
-import Reactbootstrapicon from './Skills-Icons/Frontend-Icons/Reactbootstrapicon';
-import Tailwindicon from './Skills-Icons/Frontend-Icons/Tailwindicon';
+import Reactbootstrapicon from './Skills-Icons/Additional-Icons/Reactbootstrapicon';
+import Tailwindicon from './Skills-Icons/Additional-Icons/Tailwindicon';
 
 
 const AdditionalSkills = () => {

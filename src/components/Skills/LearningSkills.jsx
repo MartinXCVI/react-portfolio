@@ -1,10 +1,9 @@
-import './Skills.scss'
 import SkillsCard from "./SkillsCard"
 
 //---- techicons.dev icons imports
 // Learning icons
 import Pythonicon from './Skills-Icons/Learning-icons/Pythonicon';
-import Springicon from './Skills-Icons/Backend-Icons/Springicon';
+import Springicon from './Skills-Icons/Learning-icons/Springicon';
 import Laravelicon from './Skills-Icons/Learning-icons/Laravelicon';
 
 const LearningSkills = () => {

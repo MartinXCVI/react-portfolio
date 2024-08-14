@@ -1,5 +1,3 @@
-import './Home.scss'
-
 import { GrPersonalComputer } from "react-icons/gr";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";

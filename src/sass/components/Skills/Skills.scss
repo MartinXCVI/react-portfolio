@@ -1,0 +1,63 @@
+@use '../../includes/colors' as colors;
+@use '../../includes/typography' as fonts;
+@use '../../includes/variables' as vars;
+
+.skills-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  .subtitle {
+    margin-bottom: 1.5rem;
+  }
+
+  .skills-section {
+    width: 80%;
+    
+    h3 {
+      font-weight: 500;
+      font-size: 1rem;
+    }
+  }
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.75rem;
+  border: 1px solid colors.$mainRed;
+  border-radius: 0.5rem;
+  background-color: colors.$whiteSmoke;
+  transition: vars.$trs-03;
+
+  &:hover {
+    background-color: colors.$mainRed;
+  }
+  &:hover .skills-name {
+    color: colors.$white;
+  }
+}
+
+
+
+/*---------- to 479px -----------*/
+
+@media all and (max-width: 480px) {
+
+  .skills-wrapper .skills-section {
+    width: 90%;
+
+    .skills-container {
+      justify-content: space-evenly;
+    }
+  }
+}

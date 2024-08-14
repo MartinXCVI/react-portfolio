@@ -7,28 +7,29 @@
 @use './includes/variables.scss';
 
 // Header
-@use '../components/Header/Header.scss';
+@use './components/Header/Header.scss';
 
 // Home 
-@use '../components/Home/Home.scss';
+@use './components/Home/Home.scss';
 
 // Skills
-@use '../components/Skills/Skills.scss';
+@use './components/Skills/Skills.scss';
+@use './components/Skills/SkillsCard.scss';
 
 // Portfolio
-@use '../components/Portfolio/Portfolio.scss';
-@use '../components/Portfolio/Project.scss';
+@use './components/Portfolio/Portfolio.scss';
+@use './components/Portfolio/Project.scss';
 
 // About
-@use '../components/About/About.scss';
-@use '../components/About/AboutCard.scss';
+@use './components/About/About.scss';
+@use './components/About/AboutCard.scss';
 
 // Contact
-@use '../components/Contact/Contact.scss';
-@use '../components/Contact/ContactCard.scss';
-@use '../components/Contact/ContactForm.scss';
-@use '../components/Contact/FormButtons.scss';
+@use './components/Contact/Contact.scss';
+@use './components/Contact/ContactCard.scss';
+@use './components/Contact/ContactForm.scss';
+@use './components/Contact/FormButtons.scss';
 
 // Footer
-@use '../components/Footer/DevSignature.scss';
-@use '../components/Footer/Footer.scss';
+@use './components/Footer/DevSignature.scss';
+@use './components/Footer/Footer.scss';

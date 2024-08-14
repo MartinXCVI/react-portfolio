@@ -1,4 +1,3 @@
-import './Skills.scss'
 import PropTypes from 'prop-types'
 
 const SkillsCard = ({ skillName, skillIcon })=> {

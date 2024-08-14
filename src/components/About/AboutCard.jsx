@@ -1,8 +1,6 @@
-import './AboutCard.scss'
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
-
 
 const AboutCard = ()=> {
   return (

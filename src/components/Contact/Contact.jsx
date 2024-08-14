@@ -1,7 +1,5 @@
-import './Contact.scss'
 import ContactForm from './ContactForm'
 import ContactCard from './ContactCard'
-
 
 const Contact = () => {
   return (

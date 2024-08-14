@@ -1,4 +1,3 @@
-import './Project.scss'
 import ProjectCard from './ProjectCard'
 
 const WebsitesProjects = () => {
@@ -33,6 +32,13 @@ const WebsitesProjects = () => {
           description="Clean and beautiful design for a psychotherapist, mental health professional, or life coach website alternatively. Developed with PHP, Bootstrap components and SCSS. Contact form functionality with Web3Forms."
           page={"https://psychotherapist.zeabur.app/"}
           repository={"https://github.com/MartinXCVI/psychotherapist-site"}
+        />
+        <ProjectCard 
+          title="Dark Ambient Form"
+          img="/images/covers/dark-ambient-form-cover.png"
+          description="Small and somewhat old project from my beginnings years ago; a lovecraftian subscription form with dark tonalities and interestingly entertaining moving green spheres. Simply developed with HTML, CSS & JavaScript only."
+          page={"https://martinxcvi.github.io/Dark-Ambient-Formulary/"}
+          repository={"https://github.com/MartinXCVI/Dark-Ambient-Formulary"}
         />
         <ProjectCard 
           title="Coporate Site"

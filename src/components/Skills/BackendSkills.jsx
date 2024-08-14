@@ -1,4 +1,3 @@
-import './Skills.scss'
 import SkillsCard from "./SkillsCard"
 
 //---- techicons.dev icons imports

@@ -1,4 +1,3 @@
-import './About.scss'
 import AboutCard from './AboutCard'
 
 const About = () => {

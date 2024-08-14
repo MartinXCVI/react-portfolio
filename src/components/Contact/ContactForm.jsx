@@ -1,4 +1,3 @@
-import './ContactForm.scss'
 import FormButtons from './FormButtons';
 
 import { useState } from 'react';

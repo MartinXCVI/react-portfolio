@@ -1,6 +1,6 @@
-@use '../../sass/includes/colors' as colors;
-@use '../../sass/includes/typography' as fonts;
-@use '../../sass/includes/variables' as vars;
+@use '../../includes/colors' as colors;
+@use '../../includes/typography' as fonts;
+@use '../../includes/variables' as vars;
 
 .about-card {
   width: 50%;
@@ -113,19 +113,7 @@
   }
 }
 
-/*---------- to 767px -----------*/
-
-@media all and (max-width: 767px) {
-
-  .about-btns-div {
-    flex-direction: column;
-
-    .about-btn {
-      margin-right: 0rem;
-      margin-bottom: 0.75rem;
-    }
-  }
-}
+/*---------- to 959px -----------*/
 
 @media all and (max-width: 959px) {
 
@@ -137,6 +125,12 @@
     }
   }
 
-
+  .about-btns-div {
+    flex-direction: column;
   
+    .about-btn {
+      margin-right: 0rem;
+      margin-bottom: 0.75rem;
+    }
+  }
 }

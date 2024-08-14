@@ -1,4 +1,3 @@
-import './Project.scss'
 import WPCard from './WPCard'
 
 const WordpressProjects = () => {

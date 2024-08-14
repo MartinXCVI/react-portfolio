@@ -1,4 +1,3 @@
-import './FormButtons.scss'
 import { GrSend } from "react-icons/gr";
 import { GiBroom } from "react-icons/gi";
 

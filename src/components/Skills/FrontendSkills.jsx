@@ -1,4 +1,3 @@
-import './Skills.scss'
 import SkillsCard from './SkillsCard';
 
 //---- techicons.dev icons imports
@@ -8,7 +7,7 @@ import CSSicon from './Skills-Icons/Frontend-Icons/CSSicon';
 import JavaScripticon from './Skills-Icons/Frontend-Icons/JavaScripticon';
 import Bootstrapicon from './Skills-Icons/Frontend-Icons/Bootstrapicon';
 import Reacticon from './Skills-Icons/Frontend-Icons/Reacticon';
-import Astroicon from './Skills-Icons/Additional-Icons/Astroicon';
+import Astroicon from './Skills-Icons/Frontend-Icons/Astroicon';
 
 const FrontendSkills = () => {
   return (

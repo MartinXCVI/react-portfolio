@@ -1,4 +1,3 @@
-import './Project.scss'
 import PropTypes from 'prop-types'
 import { FaRegEye } from "react-icons/fa";
 import { RiGitRepositoryLine } from "react-icons/ri";

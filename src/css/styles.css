@@ -396,6 +396,15 @@ a {
   color: #f6f6f6;
 }
 
+/*---------- to 479px -----------*/
+@media all and (max-width: 480px) {
+  .skills-wrapper .skills-section {
+    width: 90%;
+  }
+  .skills-wrapper .skills-section .skills-container {
+    justify-content: space-evenly;
+  }
+}
 .skill-icon {
   width: 2.5rem;
   transition: 0.3s linear all;
@@ -430,12 +439,6 @@ a {
 
 /*---------- to 479px -----------*/
 @media all and (max-width: 480px) {
-  .skills-wrapper .skills-section {
-    width: 90%;
-  }
-  .skills-wrapper .skills-section .skills-container {
-    justify-content: space-evenly;
-  }
   .skills-box {
     min-width: 25%;
   }
@@ -484,6 +487,7 @@ a {
   font-family: "Ubuntu Sans Mono", monospace;
   font-weight: 500;
   margin-bottom: 1rem;
+  padding-left: 2rem;
 }
 
 .portfolio-projects {
@@ -795,21 +799,19 @@ a {
     width: 75%;
   }
 }
-/*---------- to 767px -----------*/
-@media all and (max-width: 767px) {
+/*---------- to 959px -----------*/
+@media all and (max-width: 959px) {
+  .about-card .about-card-title, .about-card .about-article p {
+    font-size: 1rem;
+    color: #f6f6f6;
+    text-shadow: 0rem 0rem 0.1rem #050505;
+  }
   .about-btns-div {
     flex-direction: column;
   }
   .about-btns-div .about-btn {
     margin-right: 0rem;
     margin-bottom: 0.75rem;
-  }
-}
-@media all and (max-width: 959px) {
-  .about-card .about-card-title, .about-card .about-article p {
-    font-size: 1rem;
-    color: #f6f6f6;
-    text-shadow: 0rem 0rem 0.1rem #050505;
   }
 }
 .contact-section {

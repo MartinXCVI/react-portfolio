@@ -1,4 +1,3 @@
-import './ContactCard.scss'
 
 const ContactCard = ()=> {
   return (
