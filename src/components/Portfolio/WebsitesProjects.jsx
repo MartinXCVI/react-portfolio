@@ -23,9 +23,23 @@ const WebsitesProjects = () => {
         <ProjectCard 
           title="CV Website"
           img="/images/covers/cv-website-cover.webp"
-          description="Minimalist yet elegant website template for a curriculum vitae. Developed with the Astro Framework, JavaScript DOM manipulation and functions, clean design, Web3Forms emails, PDF download button, and 'AOS' scroll library."
+          description="Minimalist yet elegant website template for a curriculum vitae. Developed with the Astro Framework, JavaScript DOM manipulation, clean design, Web3Forms emails, PDF download button, and 'AOS' animations library."
           page={"https://cv-website-rd.vercel.app/"}
           repository={"https://github.com/MartinXCVI/cv-website"}
+        />
+        <ProjectCard 
+          title="Psychotherapist"
+          img="/images/covers/psychotherapist-cover.png"
+          description="Clean and beautiful design for a psychotherapist, mental health professional, or life coach website alternatively. Developed with PHP, Bootstrap components and SCSS. Contact form functionality with Web3Forms."
+          page={"https://psychotherapist.zeabur.app/"}
+          repository={"https://github.com/MartinXCVI/psychotherapist-site"}
+        />
+        <ProjectCard 
+          title="Coporate Site"
+          img="/images/covers/corporate-cover.png"
+          description="Formal and grayish yet elegantly catching corporate website. Developed with React libraries and React Bootstrap. General purpose driven for most kinds of companies as a simple but attractive landing page solution."
+          page={"https://react-corporate-rd.vercel.app/"}
+          repository={"https://github.com/MartinXCVI/react-corporate"}
         />
       </section>
     </>
