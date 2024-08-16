@@ -26,7 +26,7 @@
     font-family: fonts.$ubuntuMono;
     font-weight: 500;
     margin-bottom: 1rem;
-    padding-left: 2rem;
+    padding-left: 0.5rem;
   }
 }
 
@@ -60,6 +60,16 @@
 
     .portfolio-projects {
     flex-direction: column;
+  }
+}
+
+@media all and (min-width: 768px) {
+
+  .portfolio-section {
+  
+    .projects-title {
+      padding-left: 2rem;
+    }
   }
 }
 
