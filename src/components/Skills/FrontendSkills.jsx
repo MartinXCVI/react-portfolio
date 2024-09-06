@@ -12,8 +12,8 @@ import Astroicon from './Skills-Icons/Frontend-Icons/Astroicon';
 const FrontendSkills = () => {
   return (
     <>
-      <h3>Frontend Development</h3>
-      <section className='skills-container'>
+      <h3 data-aos="fade-right" data-aos-duration="1000">Frontend Development</h3>
+      <section className='skills-container' data-aos="fade-right" data-aos-duration="1000">
         <SkillsCard 
           skillName={"HTML"}
           skillIcon={<HTMLicon />}

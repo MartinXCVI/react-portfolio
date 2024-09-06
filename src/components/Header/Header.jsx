@@ -1,11 +1,11 @@
 import { useState } from "react"
 
 // React icons imports
-import { IoHome } from "react-icons/io5"; // <IoHome />
-import { BsTools } from "react-icons/bs"; // <BsTools />
-import { PiToolboxFill } from "react-icons/pi"; // <PiToolboxFill />
-import { FaIdCard } from "react-icons/fa"; // <FaIdCard />
-import { RiMailSendFill } from "react-icons/ri"; // <RiMailSendFill />
+import { IoHome } from "react-icons/io5";
+import { BsTools } from "react-icons/bs";
+import { PiToolboxFill } from "react-icons/pi";
+import { FaIdCard } from "react-icons/fa";
+import { RiMailSendFill } from "react-icons/ri";
 
 function Header() {
 
@@ -28,7 +28,7 @@ function Header() {
     <header className='heading'>
       <section className='hero-section'>
         <h1 className='hero-title'>
-          <a href='#portfolio-wrapper'>RD Portfolio</a>
+          <a href='#portfolio-wrapper'>MartinXCVI</a>
         </h1>
       </section>
       <nav className='navigation'>

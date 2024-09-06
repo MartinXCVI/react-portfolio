@@ -15,8 +15,8 @@ import Tailwindicon from './Skills-Icons/Additional-Icons/Tailwindicon';
 const AdditionalSkills = () => {
   return (
     <>
-      <h3>Additional Knowledge</h3>
-      <section className='skills-container'>
+      <h3 data-aos="fade-right" data-aos-duration="1000">Additional Knowledge</h3>
+      <section className='skills-container' data-aos="fade-right" data-aos-duration="1100">
         <SkillsCard 
           skillName={"Vite"}
           skillIcon={<Viteicon />}

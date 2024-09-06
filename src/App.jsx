@@ -1,5 +1,12 @@
+// Hooks
+import { useEffect } from 'react';
+
 // CSS files
 import './css/styles.css'
+
+// AOS library imports
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // Components
 import Header from './components/Header/Header'
@@ -12,14 +19,22 @@ import Footer from './components/Footer/Footer'
 
 function App() {
 
+  useEffect(()=> {
+    AOS.init({
+      // disable: "phone"
+    })
+  }, [])
+
   return (
     <>
      <Header />
-      <Home />
-      <Skills />
-      <Portfolio />
-      <About />
-      <Contact/>
+      <main>
+        <Home />
+        <Skills />
+        <Portfolio />
+        <About />
+        <Contact/>
+      </main>
       <Footer />
     </>
   )

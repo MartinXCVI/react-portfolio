@@ -11,6 +11,10 @@ html {
   background-color: #fefefe;
 }
 
+main {
+  overflow-x: hidden !important;
+}
+
 *::selection {
   background-color: #900000;
   color: #f6f6f6;
@@ -364,6 +368,7 @@ a {
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  overflow-x: hidden !important;
 }
 .skills-wrapper .subtitle {
   margin-bottom: 1.5rem;

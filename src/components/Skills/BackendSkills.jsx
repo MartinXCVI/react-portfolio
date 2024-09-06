@@ -12,8 +12,8 @@ import MySQLicon from './Skills-Icons/Backend-Icons/MySQLicon';
 const BackendSkills = () => {
   return (
     <>
-      <h3>Backend Development</h3>
-      <section className='skills-container'>
+      <h3 data-aos="fade-right" data-aos-duration="1000">Backend Development</h3>
+      <section className='skills-container' data-aos="fade-left" data-aos-duration="1050">
         <SkillsCard 
           skillName={"Java"}
           skillIcon={<Javaicon />}
