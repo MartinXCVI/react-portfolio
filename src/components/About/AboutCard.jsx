@@ -19,7 +19,7 @@ const AboutCard = ()=> {
         <div className="about-btns-div">
           <a className='about-btn' href="https://github.com/MartinXCVI/" target="_blank">Github <FaGithub className='react-icon' /></a>
           <a className='about-btn' href="https://www.linkedin.com/in/martinxcvi/" target="_blank">LinkedIn <FaLinkedin className='react-icon' /></a>
-          <a className='about-btn' href="mailto:mdzg96@gmail.com">Email <GoMail className='react-icon' /></a>
+          <a className='about-btn' href="mailto:martin96rd@gmail.com">Email <GoMail className='react-icon' /></a>
         </div>
       </section>
     </>

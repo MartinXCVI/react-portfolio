@@ -22,7 +22,7 @@ function Home() {
           <section className='dev-buttons-section'>
             <a className='dev-btn' href="https://github.com/MartinXCVI/" target="_blank" title='Github'><FaGithub className='react-dev-icon' /></a>
             <a className='dev-btn' href="https://www.linkedin.com/in/martinxcvi/" target="_blank" title='LinkedIn'><FaLinkedin className='react-dev-icon' /></a>
-            <a className='dev-btn' href="mailto:mdzg96@gmail.com" title='Email'><GoMail className='react-dev-icon' /></a>
+            <a className='dev-btn' href="mailto:martin96rd@gmail.com" title='Email'><GoMail className='react-dev-icon' /></a>
           </section>
         </article>
         <figure className='profile-fig desktop-profile-fig'>

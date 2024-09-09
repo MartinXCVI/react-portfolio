@@ -18,7 +18,7 @@ const ContactForm = () => {
     setResult("Sending...")
     const formData = new FormData(event.target)
 
-    formData.append("access_key", "205881c5-0bfa-4e93-9523-81f375f5c37d")
+    formData.append("access_key", "277a6ba5-4c90-4e6f-9980-9d912cc2b3ee")
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -39,7 +39,7 @@ const ContactForm = () => {
   return (
     <>
       <section className="form-wrapper" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
-        <form action="" id="contact-form" onSubmit={onSubmit}>
+        <form id="contact-form" onSubmit={onSubmit}>
           <fieldset className='contact-fieldset'>
             <legend className='form-legend'>Your query is welcome</legend>     
             <section className="contact-field first-form-field">

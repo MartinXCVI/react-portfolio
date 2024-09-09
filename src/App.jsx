@@ -20,9 +20,7 @@ import Footer from './components/Footer/Footer'
 function App() {
 
   useEffect(()=> {
-    AOS.init({
-      // disable: "phone"
-    })
+    AOS.init({})
   }, [])
 
   return (
