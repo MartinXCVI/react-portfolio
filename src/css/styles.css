@@ -393,7 +393,8 @@ a {
   border: 1px solid #900000;
   border-radius: 0.5rem;
   background-color: #f4f4f4;
-  transition: 0.3s linear all;
+  transition-property: background-color;
+  transition-duration: 0.3s linear all;
 }
 .skills-container:hover {
   background-color: #900000;

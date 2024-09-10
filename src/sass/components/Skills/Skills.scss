@@ -38,7 +38,8 @@
   border: 1px solid colors.$mainRed;
   border-radius: 0.5rem;
   background-color: colors.$whiteSmoke;
-  transition: vars.$trs-03;
+  transition-property: background-color;
+  transition-duration: 0.3s linear all;
 
   &:hover {
     background-color: colors.$mainRed;

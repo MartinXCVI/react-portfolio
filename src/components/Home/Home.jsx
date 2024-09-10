@@ -1,9 +1,14 @@
+import { myInfo } from "../../data/myInfo";
+
 import { GrPersonalComputer } from "react-icons/gr";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
 
 function Home() {
+
+  const { myEmail, myLinkedin, myGithub } = myInfo
+
   return (
     <section className='home-wrapper' id='home-wrapper' data-aos="fade-up" data-aos-duration="1250">
       <section className='home-section'>
@@ -20,9 +25,9 @@ function Home() {
           <p className="dev-para"></p>
           <p className='dev-para'>Currently, I am <em>open to work</em> and to <em>freelancing</em> opportunities. If you are interested in <strong>working together</strong>, feel free to <a className='email-me' href='mailto:mdzg96@gmail.com'>email me</a> — you are more than welcome.</p>
           <section className='dev-buttons-section'>
-            <a className='dev-btn' href="https://github.com/MartinXCVI/" target="_blank" title='Github'><FaGithub className='react-dev-icon' /></a>
-            <a className='dev-btn' href="https://www.linkedin.com/in/martinxcvi/" target="_blank" title='LinkedIn'><FaLinkedin className='react-dev-icon' /></a>
-            <a className='dev-btn' href="mailto:martin96rd@gmail.com" title='Email'><GoMail className='react-dev-icon' /></a>
+            <a className='dev-btn' href={myGithub} target="_blank" title='Github'><FaGithub className='react-dev-icon' /></a>
+            <a className='dev-btn' href={myLinkedin} target="_blank" title='LinkedIn'><FaLinkedin className='react-dev-icon' /></a>
+            <a className='dev-btn' href={`mailto:${myEmail}`} title='Email'><GoMail className='react-dev-icon' /></a>
           </section>
         </article>
         <figure className='profile-fig desktop-profile-fig'>

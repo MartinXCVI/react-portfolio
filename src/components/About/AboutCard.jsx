@@ -1,8 +1,13 @@
+import { myInfo } from "../../data/myInfo";
+
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
 
 const AboutCard = ()=> {
+
+  const { myEmail, myLinkedin, myGithub } = myInfo
+
   return (
     <>
       <section className="about-card" data-aos="fade-left" data-aos-duration="1500">
@@ -14,12 +19,12 @@ const AboutCard = ()=> {
           </p>
           <p className='about-article-para'>I can be both effective in self-managing for <strong>independent projects</strong>, as well as in collaborative opportunities as part of a <strong>team</strong>. Additionally, working with me is easy; I&apos;m willing to give the best of myself in order to make <em>understanding</em> and <em>cooperation</em> to be the <strong>primal cornerstones</strong> of a project&apos;s development.</p>
           <p className='about-article-para'>My mid to long term goal is to become a <em>Java developer</em> in the future. As for now, I will just keep working on my <strong>frontend-oriented</strong> skills in the <em>full stack</em> web development world as I dive deep in the previous technology I stated.</p>
-          <p className='about-article-para'>I&apos;m <strong>always</strong> open to <strong>freelancing opportunities</strong>. <a href='mailto:mdzg96@gmail.com'>Simply email me</a> if you consider it.</p>
+          <p className='about-article-para'>I&apos;m <strong>always</strong> open to <strong>freelancing opportunities</strong>. <a href={`mailto:${myEmail}`}>Simply email me</a> if you consider it.</p>
         </article>
         <div className="about-btns-div">
-          <a className='about-btn' href="https://github.com/MartinXCVI/" target="_blank">Github <FaGithub className='react-icon' /></a>
-          <a className='about-btn' href="https://www.linkedin.com/in/martinxcvi/" target="_blank">LinkedIn <FaLinkedin className='react-icon' /></a>
-          <a className='about-btn' href="mailto:martin96rd@gmail.com">Email <GoMail className='react-icon' /></a>
+          <a className='about-btn' href={myGithub} target="_blank">Github <FaGithub className='react-icon' /></a>
+          <a className='about-btn' href={myLinkedin} target="_blank">LinkedIn <FaLinkedin className='react-icon' /></a>
+          <a className='about-btn' href={`mailto:${myEmail}`}>Email <GoMail className='react-icon' /></a>
         </div>
       </section>
     </>
