@@ -6,7 +6,7 @@ const WebsitesProjects = () => {
     <>
       <section className="portfolio-projects">
         <ProjectCard
-          aosAnim="zoom-out" 
+          aosAnim="flip-right" 
           aosDuration="1500"
           aosDelay="0"
           title="Bakery"
@@ -16,7 +16,7 @@ const WebsitesProjects = () => {
           repository={"https://github.com/MartinXCVI/bakery"}
         />
         <ProjectCard 
-          aosAnim="zoom-out" 
+          aosAnim="flip-right" 
           aosDuration="1500"
           aosDelay="150"
           title="PelículasCAC"
@@ -26,7 +26,7 @@ const WebsitesProjects = () => {
           repository={"https://github.com/MartinXCVI/PeliculasCAC"}
         />
         <ProjectCard
-          aosAnim="zoom-out" 
+          aosAnim="flip-right" 
           aosDuration="1500"
           aosDelay="300"
           title="CV Website"
@@ -36,17 +36,18 @@ const WebsitesProjects = () => {
           repository={"https://github.com/MartinXCVI/cv-website"}
         />
         <ProjectCard 
-          aosAnim="zoom-out" 
+          aosAnim="flip-left" 
           aosDuration="1500"
           aosDelay="450"
-          title="Psychotherapist"
-          img="/images/covers/psychotherapist-cover.png"
-          description="Clean and beautiful design for a psychotherapist, mental health professional, or life coach website alternatively. Developed with PHP, Bootstrap components and SCSS. Contact form functionality with Web3Forms."
-          page={"https://psychotherapist.zeabur.app/"}
-          repository={"https://github.com/MartinXCVI/psychotherapist-site"}
+          title="Landscapist"
+          img="/images/covers/landscapist-cover.png"
+          // description="Clean and beautiful design for a psychotherapist, mental health professional, or life coach website alternatively. Developed with PHP, Bootstrap components and SCSS. Contact form functionality with Web3Forms."
+          description="Clean and beautiful design for a landscapist/landscaper, gardener, or arborist website alternatively. Developed with the Astro Framework, JavaScript, AOS libraries and SCSS. Contact form functionality with Web3Forms."
+          page={"https://landscapist.vercel.app/"}
+          repository={"https://github.com/MartinXCVI/landscapist"}
         />
         <ProjectCard
-          aosAnim="zoom-out" 
+          aosAnim="flip-left" 
           aosDuration="1500" 
           aosDelay="600"
           title="Dark Ambient Form"
@@ -56,7 +57,7 @@ const WebsitesProjects = () => {
           repository={"https://github.com/MartinXCVI/Dark-Ambient-Formulary"}
         />
         <ProjectCard
-          aosAnim="zoom-out" 
+          aosAnim="flip-left" 
           aosDuration="1500" 
           aosDelay="750"
           title="Coporate Site"

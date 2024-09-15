@@ -5,7 +5,7 @@ const WordpressProjects = () => {
     <>
       <section className="portfolio-projects">
         <WPCard
-          aosAnim="zoom-out" 
+          aosAnim="flip-right" 
           aosDuration="1500"
           aosDelay="0" 
           title="Personal Website"
@@ -14,7 +14,7 @@ const WordpressProjects = () => {
           page={"https://personal-website.free.nf/"}
         />
         <WPCard
-          aosAnim="zoom-out" 
+          aosAnim="flip-right" 
           aosDuration="1500"
           aosDelay="150" 
           title="Travel Blog"
@@ -23,7 +23,7 @@ const WordpressProjects = () => {
           page={"https://wordpress-blog.free.nf/"}
         />
         <WPCard
-          aosAnim="zoom-out" 
+          aosAnim="flip-right" 
           aosDuration="1500"
           aosDelay="300" 
           title="Clothing Store"

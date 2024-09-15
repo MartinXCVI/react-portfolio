@@ -32,6 +32,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  text-wrap: pretty;
+}
+
 .subtitle {
   margin-bottom: 1rem;
   font-family: "Ubuntu Sans Mono", monospace;

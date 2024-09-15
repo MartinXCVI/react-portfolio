@@ -38,7 +38,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <section className="form-wrapper" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+      <section className="form-wrapper" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
         <form id="contact-form" onSubmit={onSubmit}>
           <fieldset className='contact-fieldset'>
             <legend className='form-legend'>Your query is welcome</legend>     
