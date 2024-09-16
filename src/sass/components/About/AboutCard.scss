@@ -22,8 +22,8 @@
       margin-bottom: 1.25rem;
       color: colors.$darkBlack;
       font-weight: 600;
-      line-height: 1.25rem;
-
+      font-size: 1.1rem;
+      line-height: 1.35rem;
     }
   }
 }
@@ -99,16 +99,37 @@
 
 @media all and (max-width: 575px) {
 
-  .about-btn {
-    width: 85%;
+  .about-btns-div {
+    flex-direction: column;
+    .about-btn {
+      width: 100%;
+    }
   }
 }
 
-/*---------- 575px to 767px -----------*/
+@media all and (min-width: 576px) and (max-width: 959px) {
 
-@media all and (min-width: 576px) and (max-width: 767px) {
+  .about-btns-div {
+    justify-content: space-evenly;
+  }
+}
 
-  .about-btn {
+@media all and (max-width: 767px) {
+
+  .about-card {
+    
+    .about-card-title {
+      font-size: 1.5rem;
+    }
+    .about-article p {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 959px) {
+
+  .about-card {
     width: 75%;
   }
 }
@@ -119,15 +140,12 @@
 
   .about-card {
     .about-card-title, .about-article p {
-      font-size: 1rem;
       color: colors.$white;
       text-shadow: 0rem 0rem 0.1rem colors.$black;
     }
   }
 
   .about-btns-div {
-    flex-direction: column;
-  
     .about-btn {
       margin-right: 0rem;
       margin-bottom: 0.75rem;

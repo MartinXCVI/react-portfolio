@@ -18,6 +18,7 @@ main {
 *::selection {
   background-color: #900000;
   color: #f6f6f6;
+  text-shadow: none;
 }
 
 ul li {
@@ -213,7 +214,7 @@ p {
 }
 .home-section .dev-description .dev-para {
   width: 100%;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
   line-height: 1.35rem;
@@ -301,6 +302,9 @@ p {
 @media all and (max-width: 767px) {
   .home-section .dev-description .dev-job {
     font-size: 2rem;
+  }
+  .home-section .dev-description .dev-para {
+    font-size: 1rem;
   }
 }
 /*----------- 480px to 767px ----------*/
@@ -642,12 +646,19 @@ p {
     padding: 1rem;
   }
 }
+@media all and (min-width: 481px) and (max-width: 575px) {
+  .project-link {
+    width: 8rem;
+  }
+}
 @media all and (min-width: 481px) and (max-width: 767px) {
   .project-div {
     width: 100%;
   }
+}
+@media all and (min-width: 576px) and (max-width: 767px) {
   .project-link {
-    width: 8rem;
+    width: 11rem;
   }
 }
 @media all and (max-width: 767px) {
@@ -740,7 +751,8 @@ p {
   margin-bottom: 1.25rem;
   color: #010101;
   font-weight: 600;
-  line-height: 1.25rem;
+  font-size: 1.1rem;
+  line-height: 1.35rem;
 }
 
 .about-card-title, .about-article p {
@@ -805,25 +817,36 @@ p {
   }
 }
 @media all and (max-width: 575px) {
-  .about-btn {
-    width: 85%;
+  .about-btns-div {
+    flex-direction: column;
+  }
+  .about-btns-div .about-btn {
+    width: 100%;
   }
 }
-/*---------- 575px to 767px -----------*/
-@media all and (min-width: 576px) and (max-width: 767px) {
-  .about-btn {
+@media all and (min-width: 576px) and (max-width: 959px) {
+  .about-btns-div {
+    justify-content: space-evenly;
+  }
+}
+@media all and (max-width: 767px) {
+  .about-card .about-card-title {
+    font-size: 1.5rem;
+  }
+  .about-card .about-article p {
+    font-size: 1rem;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 959px) {
+  .about-card {
     width: 75%;
   }
 }
 /*---------- to 959px -----------*/
 @media all and (max-width: 959px) {
   .about-card .about-card-title, .about-card .about-article p {
-    font-size: 1rem;
     color: #f6f6f6;
     text-shadow: 0rem 0rem 0.1rem #050505;
-  }
-  .about-btns-div {
-    flex-direction: column;
   }
   .about-btns-div .about-btn {
     margin-right: 0rem;

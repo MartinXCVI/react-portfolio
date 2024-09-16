@@ -49,7 +49,7 @@
     
     .dev-para {
       width: 100%;
-      font-size: 1rem;
+      font-size: 1.1rem;
       font-weight: 500;
       margin-bottom: 0.5rem;
       line-height: 1.35rem;
@@ -153,6 +153,9 @@
     .dev-description {
       .dev-job {
         font-size: 2rem;
+      }
+      .dev-para {
+        font-size: 1rem;
       }
     }
   }

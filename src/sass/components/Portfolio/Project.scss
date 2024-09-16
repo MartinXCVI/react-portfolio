@@ -121,14 +121,24 @@
   }
 }
 
+@media all and (min-width: 481px) and (max-width: 575px) {
+
+  .project-link {
+    width: 8rem;
+  }
+}
+
 @media all and (min-width: 481px) and (max-width: 767px) {
 
   .project-div {
     width: 100%;
   }
+}
+
+@media all and (min-width: 576px) and (max-width: 767px) {
 
   .project-link {
-    width: 8rem;
+    width: 11rem;
   }
 }
 
