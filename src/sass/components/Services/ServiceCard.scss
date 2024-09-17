@@ -1,0 +1,49 @@
+@use '../../includes/colors' as colors;
+@use '../../includes/typography' as fonts;
+@use '../../includes/variables' as vars;
+@use '../../includes/mixins' as mx;
+
+.service-card {
+  width: 26%;
+  @include mx.flexColCenter();
+  padding: 1rem;
+  gap: 1rem;
+  background-color: colors.$whiteSmoke;
+  color: colors.$black15;
+  border: 1px solid colors.$weakRed;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0.05rem 0.1rem colors.$black25;
+  transition: vars.$trs-03;
+  .service-fig {
+    width: 25%;
+    img {
+      width: 100%;
+    }
+  }
+  .service-title {
+    text-transform: capitalize;
+    text-align: center;
+    // margin-bottom: 1rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+
+  .service-card {
+    width: 90%;
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 767px) {
+
+  .service-card {
+    width: 80%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 959px) {
+
+  .service-card {
+    width: 35%;
+  }
+}

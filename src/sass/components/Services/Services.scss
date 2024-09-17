@@ -1,0 +1,25 @@
+@use '../../includes/colors' as colors;
+@use '../../includes/typography' as fonts;
+@use '../../includes/variables' as vars;
+@use '../../includes/mixins' as mx;
+
+.services-wrapper {
+  width: 100%;
+  @include mx.flexColCenter();
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.services-section {
+  width: 100%;
+  @include mx.flexRowCenter();
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+@media all and (max-width: 767px) {
+
+  .services-section {
+    flex-direction: column;
+  }
+}

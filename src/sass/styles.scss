@@ -20,6 +20,10 @@
 @use './components/Portfolio/Portfolio.scss';
 @use './components/Portfolio/Project.scss';
 
+// Services
+@use './components/Services/Services.scss';
+@use './components/Services/ServiceCard.scss';
+
 // About
 @use './components/About/About.scss';
 @use './components/About/AboutCard.scss';
