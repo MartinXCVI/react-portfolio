@@ -13,7 +13,7 @@ const BackendSkills = () => {
   return (
     <>
       <h3 data-aos="fade-right" data-aos-duration="1000">Backend Development</h3>
-      <section className='skills-container' data-aos="fade-left" data-aos-duration="1050">
+      <section className='skills-container' data-aos="fade-left" data-aos-duration="1050" data-aos-once="true">
         <SkillsCard 
           skillName={"Java"}
           skillIcon={<Javaicon />}

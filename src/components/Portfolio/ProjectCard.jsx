@@ -5,7 +5,7 @@ import { RiGitRepositoryLine } from "react-icons/ri";
 function Project({ aosAnim, aosDuration, aosDelay, title, img, description, page, repository }) {
 
   return (
-    <div className='project-div' data-aos={aosAnim} data-aos-duration={aosDuration} data-aos-delay={aosDelay}>
+    <div className='project-div' data-aos={aosAnim} data-aos-duration={aosDuration} data-aos-delay={aosDelay} data-aos-once="true">
       <h4 className='project-name'>{title}</h4>
       <figure className='project-fig'>
         <a className="project-cover-link" href={page} target='_blank'>

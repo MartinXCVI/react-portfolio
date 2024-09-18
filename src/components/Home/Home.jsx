@@ -10,7 +10,7 @@ function Home() {
   const { myEmail, myLinkedin, myGithub } = myInfo
 
   return (
-    <section className='home-wrapper' id='home-wrapper' data-aos="fade-up" data-aos-duration="1250">
+    <section className='home-wrapper' id='home-wrapper' data-aos="fade-up" data-aos-duration="1250" data-aos-once="true">
       <section className='home-section'>
         <article className='dev-description'>
           <h2 className='dev-name'>Hello 👋🏻 I&apos;m Martín Daniel Aguirre</h2>

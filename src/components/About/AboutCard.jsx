@@ -10,7 +10,7 @@ const AboutCard = ()=> {
 
   return (
     <>
-      <section className="about-card" data-aos="fade-left" data-aos-duration="1500">
+      <section className="about-card" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
         <h2 className='about-card-title'>More about me</h2>
         <article className="about-article">
           <p className='about-article-para'>I&apos;m just a <strong>young man from Argentina</strong> that is interested in information technology, physical activity, family life, friends, and constant overall improvements.</p>

@@ -13,7 +13,7 @@ const FrontendSkills = () => {
   return (
     <>
       <h3 data-aos="fade-right" data-aos-duration="1000">Frontend Development</h3>
-      <section className='skills-container' data-aos="fade-right" data-aos-duration="1000">
+      <section className='skills-container' data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
         <SkillsCard 
           skillName={"HTML"}
           skillIcon={<HTMLicon />}

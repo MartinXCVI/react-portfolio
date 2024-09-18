@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 
 const ServiceCard = ({ img, alt, title, text }) => {
   return (
-    <div className="service-card">
+    <div className="service-card" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
       <figure className="service-fig">
         <img src={img} alt={alt} />
       </figure>

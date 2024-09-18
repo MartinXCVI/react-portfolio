@@ -29,7 +29,7 @@ function Header() {
     <header className='heading'>
       <section className='hero-section'>
         <h1 className='hero-title'>
-          <a href='#portfolio-wrapper'>MartinXCVI</a>
+          <a href='#portfolio-wrapper'>{'<'}MartinXCVI {'/>'}</a>
         </h1>
       </section>
       <nav className='navigation'>

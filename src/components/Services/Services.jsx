@@ -6,7 +6,8 @@ const Services = () => {
 
   return (
     <section className="services-wrapper" id="services-wrapper">
-      <h2 className="subtitle">Services</h2>
+      <h2 className="subtitle" data-aos="fade-down" data-aos-duration="1000">Services</h2>
+      <hr className='breakline' data-aos="zoom-in" data-aos-duration="1500" />
       <section className="services-section">
         <ServiceCard 
           img={'/icons/responsive.png'}

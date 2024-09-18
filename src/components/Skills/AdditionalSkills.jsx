@@ -16,7 +16,7 @@ const AdditionalSkills = () => {
   return (
     <>
       <h3 data-aos="fade-right" data-aos-duration="1000">Additional Knowledge</h3>
-      <section className='skills-container' data-aos="fade-right" data-aos-duration="1100">
+      <section className='skills-container' data-aos="fade-right" data-aos-duration="1100" data-aos-once="true">
         <SkillsCard 
           skillName={"Vite"}
           skillIcon={<Viteicon />}
