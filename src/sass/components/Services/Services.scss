@@ -5,9 +5,10 @@
 
 .services-wrapper {
   width: 100%;
+  min-height: 100vh;
   @include mx.flexColCenter();
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .services-section {

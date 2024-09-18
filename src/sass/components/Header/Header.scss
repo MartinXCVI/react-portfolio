@@ -10,7 +10,7 @@
   padding: 1rem;
 
   .hero-section {
-    min-width: 50%;
+    min-width: 40%;
 
     .hero-title a {
       color: colors.$white;
@@ -27,7 +27,7 @@
 }
 
 .navigation {
-  min-width: 50%;
+  min-width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: center;

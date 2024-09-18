@@ -4,6 +4,7 @@ import { useState } from "react"
 import { IoHome } from "react-icons/io5";
 import { BsTools } from "react-icons/bs";
 import { PiToolboxFill } from "react-icons/pi";
+import { AiFillApi } from "react-icons/ai";
 import { FaIdCard } from "react-icons/fa";
 import { RiMailSendFill } from "react-icons/ri";
 
@@ -42,11 +43,14 @@ function Header() {
             <a href='#home-wrapper'><IoHome /> Home</a>
           </li>
           <li className='nav-item'>
-            <a href='#skills-wrapper'><BsTools /> Skills</a>
-            </li>
-          <li className='nav-item'>
             <a href='#portfolio-wrapper'><PiToolboxFill className='nav-icon' /> Portfolio</a>
-            </li>
+          </li>
+          <li className='nav-item'>
+            <a href='#skills-wrapper'><BsTools/> Skills</a>
+          </li>
+          <li className='nav-item'>
+            <a href='#services-wrapper'><AiFillApi /> Services</a>
+          </li>
           <li className='nav-item'>
             <a href='#about-wrapper'><FaIdCard className='nav-icon' /> About</a>
           </li>
