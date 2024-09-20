@@ -250,7 +250,7 @@ p {
 }
 
 .profile-fig {
-  width: 35%;
+  width: 30%;
   padding: 1rem;
 }
 .profile-fig .profile-img {
@@ -304,7 +304,7 @@ p {
     padding-left: 0.25rem;
   }
   .mobile-profile-fig {
-    width: 70%;
+    width: 60%;
   }
 }
 @media all and (max-width: 767px) {
@@ -322,7 +322,7 @@ p {
     width: 80%;
   }
   .mobile-profile-fig {
-    width: 70%;
+    width: 65%;
   }
 }
 /*----------- 768px to 959px ----------*/
@@ -332,7 +332,7 @@ p {
     width: 75%;
   }
   .mobile-profile-fig {
-    width: 50%;
+    width: 45%;
   }
   .dev-btn {
     padding-inline: 2rem;
