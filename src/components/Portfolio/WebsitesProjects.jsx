@@ -52,8 +52,8 @@ const WebsitesProjects = () => {
           aosDelay="600"
           title="Dark Ambient Form"
           img="/images/covers/dark-ambient-form-cover.png"
-          description="Small and somewhat old project from my beginnings years ago; a lovecraftian subscription form with dark tonalities and interestingly entertaining moving green spheres. Simply developed with HTML, CSS & JavaScript only."
-          page={"https://martinxcvi.github.io/Dark-Ambient-Formulary/"}
+          description="A lovecraftian subscription form with dark tonalities and interestingly entertaining moving green spheres. Small yet curiously complex project in its programmatically sense. Developed with React, Vite and SASS preprocessor."
+          page={"https://dark-ambient-formulary.vercel.app/"}
           repository={"https://github.com/MartinXCVI/Dark-Ambient-Formulary"}
         />
         <ProjectCard
