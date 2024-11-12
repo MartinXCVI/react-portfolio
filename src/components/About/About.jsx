@@ -3,7 +3,7 @@ import AboutCard from './AboutCard'
 const About = () => {
   return (
     <>
-      <section className="about-wrapper" id='about-wrapper'>
+      <section className="about-wrapper wrapper" id='about-wrapper'>
         <AboutCard />
       </section>
     </>

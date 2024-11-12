@@ -5,10 +5,9 @@
 .skill-icon {
   width: 2.5rem;
   transition: vars.$trs-05;
-
   &:hover {
-  cursor: pointer;
-  transform: scale(1.2);
+    cursor: pointer;
+    transform: scale(1.2);
   }
 }
 
@@ -20,12 +19,10 @@
   border: 1px solid transparent;
   border-radius: 0.75rem;
   transition: vars.$trs-02;
-
   &:hover {
     background-color: colors.$white;
     border-color: colors.$weakRed;
   }
-
   &:hover .skills-name {
     color: colors.$black25;
   }
@@ -43,7 +40,6 @@
 
   .skills-box {
     min-width: 25%;
-
     .skills-name {
       font-size: 0.8rem;
     }

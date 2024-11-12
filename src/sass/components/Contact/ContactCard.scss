@@ -1,19 +1,15 @@
 @use '../../includes/colors' as colors;
 @use '../../includes/typography' as fonts;
 @use '../../includes/variables' as vars;
+@use '../../includes/mixins' as mx;
 
 .contact-card {
   width: 65%;
   max-width: 65%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-
+  @include mx.flexCol(vars.$evenly, flex-start);
   .contact-card-title {
     margin-bottom: 1.5rem;
   }
-
   p {
     margin-bottom: 1.5rem;
     line-height: 1.25rem;

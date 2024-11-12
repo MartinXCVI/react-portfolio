@@ -1,52 +1,36 @@
 @use '../../includes/colors' as colors;
 @use '../../includes/typography' as fonts;
 @use '../../includes/variables' as vars;
+@use '../../includes/mixins' as mx;
 
 .home-wrapper {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  @include mx.flexRowCenter();
 }
 
 .home-section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include mx.flexRowCenter();
   padding-bottom: 3rem;
 
   .dev-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include mx.flexColCenter();
     padding: 1rem;
-
     .dev-name {
       margin-bottom: 0.5rem;
       font-size: 1.25rem;
     }
-    
     .dev-job {
       margin-bottom: 0.25rem;
       font-family: fonts.$ubuntuMono;
       font-size: 2.75rem;
       display: flex;
       align-items: center;
-
       .dev-job-icon {
         padding-left: 0.25rem;
       }
     }
-
     .dev-country {
       font-size: 1.25rem;
     }
-    
     .dev-para {
       width: 100%;
       font-size: 1.1rem;
@@ -54,24 +38,21 @@
       margin-bottom: 0.5rem;
       line-height: 1.35rem;
     }
-    
     .dev-para:last-of-type  {
       margin-bottom: 1.25rem;
     }
-
     .dev-para .email-me {
-      color: colors.$mainRed;
-      transition: vars.$trs-02;
+      color: colors.$firstColor;
+      transition: vars.$trs-03;
       font-weight: 600;
 
       &:hover {
-        color: colors.$red;
+        color: colors.$secondColor;
       }
-      &:hover {
-        color: colors.$red;
+      &:focus {
+        color: colors.$secondColor;
       }
     }
-
     .dev-name, .dev-job, .dev-country {
       width: 100%;
     }
@@ -85,39 +66,37 @@
 .profile-fig {
   width: 30%;
   padding: 1rem;
-
   .profile-img {
     width: 100%;
-    border-radius: 100rem;
+    transition: vars.$trs-03;
+    &:hover {
+      filter: drop-shadow(1rem 1rem 0rem colors.$firstColor);
+    }
   }
 }
 
 .dev-buttons-section {
   width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  @include mx.flexRow(flex-start, center);
   margin-top: 0;
 }
 
 .dev-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include mx.flexRow(center, center);
   margin-right: 4rem;
   text-align: center;
   font-size: 1.25rem;
   padding: 0.75rem;
   border-radius: 3rem;
-  background-color: colors.$mainRed;
+  background-color: colors.$secondColor;
   color: colors.$white;
   box-shadow: 0rem 0.1rem 0.1rem colors.$black25;
-  transition: vars.$trs-02;
+  transition: vars.$trs-03;
   &:hover {
-    background-color: colors.$red;
+    background-color: colors.$thirdColor;
   }
   &:focus {
-    background-color: colors.$red;
+    background-color: colors.$thirdColor;
     color: colors.$lightGray;
     box-shadow: 0rem 0rem 0rem colors.$black25;
   }

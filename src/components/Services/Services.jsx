@@ -5,10 +5,10 @@ const Services = () => {
   
 
   return (
-    <section className="services-wrapper" id="services-wrapper">
+    <section className="services-wrapper wrapper" id="services-wrapper">
       <h2 className="subtitle" data-aos="fade-down" data-aos-duration="1000">Services</h2>
       <hr className='breakline' data-aos="zoom-in" data-aos-duration="1500" />
-      <section className="services-section">
+      <section className="services-section" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
         <ServiceCard 
           img={'/icons/responsive.png'}
           alt={'alt'}

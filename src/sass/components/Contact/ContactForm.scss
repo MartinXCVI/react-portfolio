@@ -1,46 +1,37 @@
 @use '../../includes/colors' as colors;
 @use '../../includes/typography' as fonts;
 @use '../../includes/variables' as vars;
+@use '../../includes/mixins' as mx;
 
 .form-wrapper {
   width: 60%;
   min-width: 65%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include mx.flexColCenter();
 }
 
 #contact-form {
   width: 100%;
-  display: flex;
+  @include mx.flexRowCenter();
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  background-color: colors.$whiteSmoke;
+  background-color: colors.$bgColor;
   border: 1px solid colors.$weakRed;
   border-radius: 0.5rem;
   padding: 1.25rem;
   transition: vars.$trs-03;
-
   &:hover {
-    border: 1px solid colors.$mainRed;
+    border: 1px solid colors.$firstColor;
     box-shadow: 0rem 0.05rem 0.1rem colors.$black25;
   }
   &:hover .contact-fieldset {
-    border-top: 1px solid colors.$mainRed;
+    border-top: 1px solid colors.$firstColor;
   }
 }
 
 .contact-fieldset {
   width: 95%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  @include mx.flexColCenter();
   border-top: 1px solid colors.$weakRed;
-  transition: vars.$trs-02;
-
+  transition: vars.$trs-03;
   .form-legend {
     width: auto;
     text-align: center;
@@ -53,25 +44,16 @@
 
 .contact-field {
   width: 100%;
-  display: flex;
-  flex-direction: row;
+  @include mx.flexRow(vars.$between, center);
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .form-div {
   width: 45%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  @include mx.flexCol(center, flex-start);
   margin-bottom: 1rem;
-
-  .form-div .form-label {
-    width: 100%;
-    display: flex;
-    align-items: center;
+  .form-label {
+    @include mx.flexRow(flex-start, center);
     margin-bottom: 0.25rem;
   }
 }
@@ -94,16 +76,16 @@
   border-radius: 0.25rem;
   transition: 0.2s linear all;
   margin-bottom: 0.25rem;
-  background-color: colors.$whiteSmoke;
-  color: colors.$darkRed;
+  background-color: colors.$bgColor;
+  color: colors.$secondColor;
 
   &:hover {
-    border-bottom: 1px solid colors.$red;
+    border-bottom: 1px solid colors.$thirdColor;
   }
   &:focus {
-    outline: 1px solid #700000;
+    outline: 1px solid colors.$thirdColor;
     border-bottom: 1px solid transparent;
-    box-shadow: 0rem 0.1rem 0.1rem 0rem #252525;
+    box-shadow: 0rem 0.1rem 0.1rem 0rem colors.$black25;
     background-color: colors.$clearWhite;
   }
 }
@@ -119,15 +101,14 @@
   border: 1px solid colors.$weakRed;
   border-radius: 0.25rem;
   resize: none;
-  background-color: colors.$whiteSmoke;
-  color: colors.$darkRed;
+  background-color: colors.$bgColor;
+  color: colors.$thirdColor;
   transition: vars.$trs-02;
-
   &:hover {
-    border: 1px solid colors.$mainRed;
+    border: 1px solid colors.$firstColor;
   }
   &:focus {
-    outline: 1px solid colors.$mainRed;
+    outline: 1px solid colors.$firstColor;
     border: 1px solid transparent;
     background-color: colors.$clearWhite;
     box-shadow: 0rem 0.1rem 0.1rem 0rem colors.$black25;
@@ -137,7 +118,6 @@
 .result-div {
   margin-bottom: 1rem;
   padding-inline: 0.25rem;
-
   .result-msg {
     font-size: 0.9rem;
   }

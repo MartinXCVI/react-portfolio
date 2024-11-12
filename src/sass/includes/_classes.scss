@@ -1,0 +1,61 @@
+@use './typography' as font;
+@use './colors' as color;
+@use './variables' as var;
+
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+}
+
+.image {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-grey {
+  color: color.$grey;
+}
+
+.text-black {
+  color: color.$black;
+}
+
+.capital {
+  text-transform: capitalize;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.over-x {
+  overflow-x: hidden;
+}
+
+.over-y {
+  overflow-y: hidden;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+
+@media all and (max-width: 575px) {
+  
+  .wrapper {
+    padding: 2rem 1rem;
+  }
+}
+
+@media all and (min-width: 576px) and (max-width: 991px) {
+  
+  .wrapper {
+    padding: 3rem 1.5rem;
+  }
+}

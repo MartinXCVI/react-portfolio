@@ -1,20 +1,12 @@
 @use '../../includes/colors' as colors;
 @use '../../includes/typography' as fonts;
 @use '../../includes/variables' as vars;
+@use '../../includes/mixins' as mx;
 
 .skills-wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  overflow-x: hidden !important;
-
+  @include mx.flexColCenter();
   .skills-section {
     width: 80%;
-    
     h3 {
       font-weight: 500;
       font-size: 1rem;
@@ -23,29 +15,24 @@
 }
 
 .skills-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include mx.flexRowCenter();
   flex-wrap: wrap;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
-  border: 1px solid colors.$mainRed;
+  border: 1px solid colors.$firstColor;
   border-radius: 0.5rem;
-  background-color: colors.$whiteSmoke;
+  background-color: colors.$bgColor;
   transition-property: background-color;
   transition-duration: 0.3s linear all;
-
   &:hover {
-    background-color: colors.$mainRed;
+    background-color: colors.$secondColor;
   }
   &:hover .skills-name {
     color: colors.$white;
   }
 }
-
-
 
 /*---------- to 479px -----------*/
 
@@ -53,7 +40,6 @@
 
   .skills-wrapper .skills-section {
     width: 90%;
-
     .skills-container {
       justify-content: space-evenly;
     }

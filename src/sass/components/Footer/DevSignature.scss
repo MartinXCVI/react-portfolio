@@ -6,20 +6,17 @@
   padding: 0.5rem 1rem;
   border-radius: 3rem;
   transition: vars.$trs-03;
-
   &:hover {
-    background-color: colors.$mainRed;
+    background-color: colors.$thirdColor;
     color: colors.$white;
   }
-  
   &:hover .dev-github {
     color: colors.$slateGray;
   }
 }
 
 .dev-github {
-  color: colors.$mainRed;
-
+  color: colors.$firstColor;
   &:focus {
     color: colors.$darkSlate;
   }

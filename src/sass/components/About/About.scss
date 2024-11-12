@@ -1,35 +1,20 @@
 @use '../../includes/colors' as colors;
 @use '../../includes/typography' as fonts;
 @use '../../includes/variables' as vars;
+@use '../../includes/mixins' as mx;
 
 .about-wrapper {
-  width: 100%;
-  min-height: 95vh;
-  display: flex;
-  justify-content: right;
-  align-items: center;
+  @include mx.flexRow(right, center);
   position: relative;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  
   &::before {
-    content: '';
-    inset: 0;
-    position: absolute;
-    z-index: -5;
-    background: colors.$weakRed;
+    @include mx.bgColor(-5, colors.$weakRed, 1);
   }
   &::after {
-    content: '';
-    inset: 0;
-    position: absolute;
-    z-index: -1;
-    background-image: url('/images/about-bg.webp');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     opacity: 0.9;
+    @include mx.bgHeroImg(-1, '/images/about-bg.webp', 0.9);
+    background-attachment: fixed;
   }
 }
 
@@ -40,7 +25,6 @@
   .about-wrapper {
     flex-direction: column;
     justify-content: space-evenly;
-
     &::before {
       background: colors.$black15;
     }

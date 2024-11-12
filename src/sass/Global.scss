@@ -11,7 +11,7 @@
 }
 
 html {
-  background-color: colors.$clearWhite;
+  background-color: colors.$bgColor;
   scroll-behavior: smooth;
 }
 
@@ -20,7 +20,7 @@ main {
 }
 
 *::selection {
-  background-color: colors.$mainRed;
+  background-color: colors.$firstColor;
   color: colors.$white;
   text-shadow: none;
 }
@@ -48,7 +48,7 @@ p {
 
 .breakline {
   width: 4rem;
-  border-top: 5px solid colors.$mainRed;
+  border-top: 5px solid colors.$firstColor;
   border-radius: 3rem;
   margin-bottom: 3rem;
 }

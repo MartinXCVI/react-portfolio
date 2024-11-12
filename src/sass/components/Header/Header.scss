@@ -3,7 +3,7 @@
 @use '../../includes/variables' as vars;
 
 .heading {
-  background-color: colors.$mainRed;
+  background-color: colors.$firstColor;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,7 +61,7 @@
       background-color: colors.$white;
     }
     &:focus {
-      color: colors.$red;
+      color: colors.$secondColor;
     }
   }
 }

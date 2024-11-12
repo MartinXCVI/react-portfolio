@@ -1,12 +1,10 @@
 @use '../../includes/colors' as colors;
 @use '../../includes/typography' as fonts;
 @use '../../includes/variables' as vars;
+@use '../../includes/mixins' as mx;
 
 .footer-element {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include mx.flexRowCenter();
   padding-top: 2rem;
   padding-bottom: 2rem;
 }

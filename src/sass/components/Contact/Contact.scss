@@ -1,22 +1,8 @@
 @use '../../includes/colors' as colors;
 @use '../../includes/typography' as fonts;
 @use '../../includes/variables' as vars;
+@use '../../includes/mixins' as mx;
 
 .contact-section {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-}
-
-@media all and (max-width: 767px) {
-
-  .contact-section {
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem 0rem;
-  }
+  @include mx.flexColCenter();
 }

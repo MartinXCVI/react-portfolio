@@ -4,15 +4,10 @@
 @use '../../includes/mixins' as mx;
 
 .services-wrapper {
-  width: 100%;
-  min-height: 100vh;
   @include mx.flexColCenter();
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .services-section {
-  width: 100%;
   @include mx.flexRowCenter();
   flex-wrap: wrap;
   gap: 2rem;

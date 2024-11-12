@@ -1,25 +1,21 @@
 @use '../../includes/colors' as colors;
 @use '../../includes/typography' as fonts;
 @use '../../includes/variables' as vars;
+@use '../../includes/mixins' as mx;
 
 .project-div {
   width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include mx.flexColCenter();
   padding: 1rem 0.5rem;
-  // margin-bottom: 1.25rem;
-  background-color: colors.$whiteSmoke;
+  background-color: colors.$bgColor;
   color: colors.$black15;
   border: 1px solid colors.$weakRed;
   border-radius: 0.5rem;
   box-shadow: 0rem 0.05rem 0.1rem colors.$black25;
   transition: vars.$trs-03;
-
   &:hover {
     box-shadow: 0rem 0.1rem 0.2rem colors.$black25;
   }
-
   .project-name {
     margin-bottom: 0.5rem;
     font-size: 1.25rem;
@@ -31,21 +27,16 @@
 .project-fig {
   width: 100%;
   margin-bottom: 0.75rem;
-
   .project-cover-link {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include mx.flexRowCenter();
     overflow: hidden;
     border-radius: 0.5rem;
-
     .project-img {
       width: 100%;
       border: 1px solid colors.$weakRed;
       border-radius: 0.5rem;
       transition: vars.$trs-05;
-
       &:hover {
         transform: scale(1.05);
       }
@@ -61,9 +52,7 @@
 
 .project-links-div {
   width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  @include mx.flexRow(vars.$evenly, center);
 }
 
 .project-link {
@@ -71,7 +60,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: colors.$mainRed;
+  background-color: colors.$secondColor;
   color: colors.$white;
   padding: 0.25rem 0.5rem;
   border-radius: 3rem;
@@ -81,12 +70,11 @@
   font-family: fonts.$ubuntuCond;
   transition: vars.$trs-02;
   box-shadow: 0rem 0.1rem 0.1rem colors.$black25;
-
   &:hover {
-    background-color: colors.$red;
+    background-color: colors.$thirdColor;
   }
   &:focus {
-    background-color: colors.$red;
+    background-color: colors.$thirdColor;
     color: colors.$black;
     box-shadow: 0rem 0rem 0rem colors.$black25;
   }
@@ -101,7 +89,6 @@
 
   .project-links-div {
     flex-direction: column;
-
     .project-link {
       width: 100%;
       margin-bottom: 0.7rem;

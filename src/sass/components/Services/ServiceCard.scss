@@ -8,17 +8,16 @@
   @include mx.flexColCenter();
   padding: 1.25rem 1rem;
   gap: 1rem;
-  background-color: colors.$whiteSmoke;
+  background-color: colors.$bgColor;
   color: colors.$black15;
   border: 1px solid colors.$weakRed;
-  border-left: 5px solid colors.$mainRed;
+  border-left: 5px solid colors.$firstColor;
   border-radius: 0.5rem;
   box-shadow: 0rem 0.05rem 0.1rem colors.$black25;
   transition: vars.$trs-03;
   &:hover {
-    border-left-color: colors.$red;
+    border-left-color: colors.$thirdColor;
     box-shadow: 0rem 0.1rem 0.3rem colors.$black25;
-    background-color: colors.$clearWhite;
     .service-title {
       color: colors.$darkerGrey;
     }
