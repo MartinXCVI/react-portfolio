@@ -22,7 +22,7 @@ const WordpressProjects = () => {
           description="Timeless and classic Wordpress blog for a traveler or entrepreneur. Developed with Elementor and Unlimited Elements tools. WPForms Lite for contact form, and Instagram feed integration. Naturalistic while thought-provoking design."
           page={"https://wordpress-blog.free.nf/"}
         />
-        {/* <WPCard
+        <WPCard
           aosAnim="flip-right" 
           aosDuration="1500"
           aosDelay="300" 
@@ -30,7 +30,7 @@ const WordpressProjects = () => {
           img="/images/covers/online-store-cover.webp"
           description="WooCommerce website about a generic clothing store for men, women and children. Structured with Elementor, Header & Footer builder, WPForms Lite for contacting, payments via Stripe, lateral cart, easy checkout process, and custom plugins."
           page={"https://clothing-store.free.nf/"}
-        /> */}
+        />
       </section>
     </>
   )
