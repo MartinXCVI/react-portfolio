@@ -146,8 +146,8 @@ p {
 .nav-item a {
   color: #f6f6f6;
   text-decoration: none;
-  font-size: 1rem;
-  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 3rem;
   transition: 0.2s linear all;
 }
@@ -235,6 +235,29 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.home-wrapper::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -5;
+  background: #252525;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+}
+.home-wrapper::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: -10;
+  background-image: url("/images/header-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
 }
 
 .home-section {
@@ -249,13 +272,15 @@ p {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  text-align: center;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
 }
 .home-section .dev-description .dev-name {
-  margin-bottom: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 2rem;
+  margin-bottom: -1rem;
 }
 .home-section .dev-description .dev-job {
-  margin-bottom: 0.25rem;
   font-family: "Ubuntu Sans Mono", monospace;
   font-size: 2.75rem;
   display: flex;
@@ -263,6 +288,10 @@ p {
 }
 .home-section .dev-description .dev-job .dev-job-icon {
   padding-left: 0.25rem;
+}
+.home-section .dev-description .dev-name, .home-section .dev-description .dev-job {
+  color: #f6f6f6;
+  text-shadow: 0 0 0.25rem #050505;
 }
 .home-section .dev-description .dev-country {
   font-size: 1.25rem;
@@ -311,16 +340,22 @@ p {
 .dev-buttons-section {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   margin-top: 0;
+  gap: 3rem;
+}
+.dev-buttons-section .about-btn {
+  margin-right: 0rem;
+}
+.dev-buttons-section .about-btn .react-dev-icon {
+  margin-left: 0.25rem;
 }
 
 .dev-btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 4rem;
   text-align: center;
   font-size: 1.25rem;
   padding: 0.75rem;
@@ -347,7 +382,7 @@ p {
     padding: 1rem 0rem;
   }
   .home-section .dev-description .dev-name {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
   .home-section .dev-description .dev-para {
     width: 100%;
@@ -357,9 +392,21 @@ p {
     width: 60%;
   }
 }
+@media all and (max-width: 575px) {
+  .dev-buttons-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .dev-buttons-section .about-btn {
+    width: 100%;
+  }
+}
 @media all and (max-width: 767px) {
   .home-section .dev-description .dev-job {
-    font-size: 2rem;
+    font-size: 2.75rem;
   }
   .home-section .dev-description .dev-para {
     font-size: 1rem;
@@ -423,7 +470,7 @@ p {
 }
 @media all and (min-width: 960px) {
   .dev-description {
-    max-width: 40%;
+    max-width: 100%;
   }
 }
 .skills-wrapper {

@@ -5,6 +5,13 @@
 
 .home-wrapper {
   @include mx.flexRowCenter();
+  position: relative;
+  &::before {
+    @include mx.bgColor(-5, colors.$black25, 0.2);
+  }
+  &::after {
+    @include mx.bgHeroImg(-10, '/images/header-hero.jpg', 1);
+  }
 }
 
 .home-section {
@@ -14,12 +21,14 @@
   .dev-description {
     @include mx.flexColCenter();
     padding: 1rem;
+    text-align: center;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
     .dev-name {
-      margin-bottom: 0.5rem;
-      font-size: 1.25rem;
+      font-size: 2rem;
+      margin-bottom: -1rem;
     }
     .dev-job {
-      margin-bottom: 0.25rem;
       font-family: fonts.$ubuntuMono;
       font-size: 2.75rem;
       display: flex;
@@ -27,6 +36,10 @@
       .dev-job-icon {
         padding-left: 0.25rem;
       }
+    }
+    .dev-name, .dev-job {
+      color: colors.$white;
+      text-shadow: 0 0 0.25rem colors.$black;
     }
     .dev-country {
       font-size: 1.25rem;
@@ -77,13 +90,20 @@
 
 .dev-buttons-section {
   width: 100%;
-  @include mx.flexRow(flex-start, center);
+  @include mx.flexRow(center, center);
   margin-top: 0;
+  gap: 3rem;
+  .about-btn {
+    margin-right: 0rem;
+    .react-dev-icon {
+      margin-left: 0.25rem;
+    }
+  }
 }
 
 .dev-btn {
   @include mx.flexRow(center, center);
-  margin-right: 4rem;
+  // margin-right: 4rem;
   text-align: center;
   font-size: 1.25rem;
   padding: 0.75rem;
@@ -112,7 +132,7 @@
     padding: 1rem 0rem;
 
     .dev-name {
-      font-size: 1.1rem;
+      font-size: 1.5rem;
     }
 
     .dev-para {
@@ -126,12 +146,22 @@
   }
 }
 
+@media all and (max-width: 575px) {
+  .dev-buttons-section {
+    @include mx.flexColCenter();
+    gap: 1rem;
+    .about-btn {
+      width: 100%;
+    }
+  }
+}
+
 @media all and (max-width: 767px) {
 
   .home-section {
     .dev-description {
       .dev-job {
-        font-size: 2rem;
+        font-size: 2.75rem;
       }
       .dev-para {
         font-size: 1rem;
@@ -221,6 +251,6 @@
 @media all and (min-width: 960px) {
 
   .dev-description {
-    max-width: 40%;
+    max-width: 100%;
   }
 }

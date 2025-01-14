@@ -6,7 +6,7 @@ const WebsitesProjects = () => {
     <>
       <section className="portfolio-projects">
         <ProjectCard
-          aosAnim="flip-right" 
+          aosAnim="zoom-out-up" 
           aosDuration="1500"
           aosDelay="0"
           title="Bakery"
@@ -16,7 +16,7 @@ const WebsitesProjects = () => {
           repository={"https://github.com/MartinXCVI/bakery"}
         />
         <ProjectCard 
-          aosAnim="flip-right" 
+          aosAnim="zoom-out-up" 
           aosDuration="1500"
           aosDelay="150"
           title="PelículasCAC"
@@ -26,7 +26,7 @@ const WebsitesProjects = () => {
           repository={"https://github.com/MartinXCVI/PeliculasCAC"}
         />
         <ProjectCard
-          aosAnim="flip-right" 
+          aosAnim="zoom-out-up" 
           aosDuration="1500"
           aosDelay="300"
           title="CV Website"
@@ -36,7 +36,7 @@ const WebsitesProjects = () => {
           repository={"https://github.com/MartinXCVI/cv-website"}
         />
         <ProjectCard 
-          aosAnim="flip-left" 
+          aosAnim="zoom-out-down" 
           aosDuration="1500"
           aosDelay="450"
           title="Landscapist"
@@ -47,7 +47,7 @@ const WebsitesProjects = () => {
           repository={"https://github.com/MartinXCVI/landscapist"}
         />
         <ProjectCard
-          aosAnim="flip-left" 
+          aosAnim="zoom-out-down" 
           aosDuration="1500" 
           aosDelay="600"
           title="Dark Ambient Form"
@@ -57,7 +57,7 @@ const WebsitesProjects = () => {
           repository={"https://github.com/MartinXCVI/Dark-Ambient-Formulary"}
         />
         <ProjectCard
-          aosAnim="flip-left" 
+          aosAnim="zoom-out-down" 
           aosDuration="1500" 
           aosDelay="750"
           title="Coporate Site"
