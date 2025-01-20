@@ -20,7 +20,7 @@ const WebsitesProjects = () => {
           aosDuration="1500"
           aosDelay="150"
           title="PelículasCAC"
-          img="/images/covers/peliculascac-cover.webp"
+          img="/images/covers/peliculas-cac-cover.webp"
           description="Frontend project based on a films & cartoons streaming platform for the 'Codo a Codo' bootcamp. Developed in a group of 4 under the scrum modality. Responsive, 'AOS' scroll library, forms validation, and APIs consumption."
           page={"https://martinxcvi.github.io/PeliculasCAC/"}
           repository={"https://github.com/MartinXCVI/PeliculasCAC"}
@@ -40,7 +40,7 @@ const WebsitesProjects = () => {
           aosDuration="1500"
           aosDelay="450"
           title="Landscapist"
-          img="/images/covers/landscapist-cover.png"
+          img="/images/covers/landscapist-cover.webp"
           // description="Clean and beautiful design for a psychotherapist, mental health professional, or life coach website alternatively. Developed with PHP, Bootstrap components and SCSS. Contact form functionality with Web3Forms."
           description="Clean and beautiful design for a landscapist/landscaper, gardener, or arborist website alternatively. Developed with the Astro Framework, JavaScript, AOS libraries and SCSS. Contact form functionality with Web3Forms."
           page={"https://landscapist.vercel.app/"}
@@ -51,7 +51,7 @@ const WebsitesProjects = () => {
           aosDuration="1500" 
           aosDelay="600"
           title="Dark Ambient Form"
-          img="/images/covers/dark-ambient-form-cover.png"
+          img="/images/covers/dark-ambient-form-cover.webp"
           description="A lovecraftian subscription form with dark tonalities and interestingly entertaining moving green spheres. Small yet curiously complex project in its programmatically sense. Developed with React, Vite and SASS preprocessor."
           page={"https://dark-ambient-formulary.vercel.app/"}
           repository={"https://github.com/MartinXCVI/Dark-Ambient-Formulary"}
@@ -61,7 +61,7 @@ const WebsitesProjects = () => {
           aosDuration="1500" 
           aosDelay="750"
           title="Coporate Site"
-          img="/images/covers/corporate-cover.png"
+          img="/images/covers/corporate-cover.webp"
           description="Formal and grayish yet elegantly catching corporate website. Developed with React libraries and React Bootstrap. General purpose driven for most kinds of companies as a simple but attractive landing page solution."
           page={"https://react-corporate-rd.vercel.app/"}
           repository={"https://github.com/MartinXCVI/react-corporate"}
