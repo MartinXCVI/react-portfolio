@@ -20,7 +20,7 @@
 
   .dev-description {
     @include mx.flexColCenter();
-    padding: 1rem;
+    padding: 0.5rem 1rem 1rem;
     text-align: center;
     gap: 2.5rem;
     margin-bottom: 2rem;

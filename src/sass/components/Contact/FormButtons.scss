@@ -61,20 +61,27 @@
   .form-buttons-div {
     flex-direction: column;
     justify-content: center;
+    .form-btn {
+      width: 100%;
+    }
   }
 
 }
 
 @media all and (min-width: 481px) and (max-width: 767px) {
 
-  .form-btn {
-    width: 45%;
+  .form-buttons-div {
+    .form-btn {
+      width: 45%;
+    }
   }
 }
 
 @media all and (max-width: 767px) {
 
-  .form-btn {
-    margin-bottom: 1rem;
+  .form-buttons-div {
+    .form-btn {
+      margin-bottom: 1rem;
+    }
   }
 }
