@@ -11,13 +11,13 @@
   }
   &::after {
     @include mx.bgHeroImg(-10, '/images/header-hero.webp', 1);
+    background-attachment: fixed;
   }
 }
 
 .home-section {
   @include mx.flexRowCenter();
   padding-bottom: 3rem;
-
   .dev-description {
     @include mx.flexColCenter();
     padding: 0.5rem 1rem 1rem;
@@ -33,57 +33,13 @@
       font-size: 2.75rem;
       display: flex;
       align-items: center;
-      .dev-job-icon {
-        padding-left: 0.25rem;
-      }
     }
     .dev-name, .dev-job {
       color: colors.$white;
       text-shadow: 0 0 0.25rem colors.$black;
     }
-    .dev-country {
-      font-size: 1.25rem;
-    }
-    .dev-para {
+    .dev-name, .dev-job {
       width: 100%;
-      font-size: 1.1rem;
-      font-weight: 500;
-      margin-bottom: 0.5rem;
-      line-height: 1.35rem;
-    }
-    .dev-para:last-of-type  {
-      margin-bottom: 1.25rem;
-    }
-    .dev-para .email-me {
-      color: colors.$firstColor;
-      transition: vars.$trs-03;
-      font-weight: 600;
-
-      &:hover {
-        color: colors.$secondColor;
-      }
-      &:focus {
-        color: colors.$secondColor;
-      }
-    }
-    .dev-name, .dev-job, .dev-country {
-      width: 100%;
-    }
-  }
-}
-
-.mobile-profile-fig {
-  display: none;
-}
-
-.profile-fig {
-  width: 30%;
-  padding: 1rem;
-  .profile-img {
-    width: 100%;
-    transition: vars.$trs-03;
-    &:hover {
-      filter: drop-shadow(1rem 1rem 0rem colors.$firstColor);
     }
   }
 }
@@ -102,23 +58,28 @@
 }
 
 .dev-btn {
+  width: 7rem;
   @include mx.flexRow(center, center);
-  // margin-right: 4rem;
   text-align: center;
-  font-size: 1.25rem;
-  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
   border-radius: 3rem;
-  background-color: colors.$secondColor;
+  background-color: colors.$firstColor;
   color: colors.$white;
   box-shadow: 0rem 0.1rem 0.1rem colors.$black25;
   transition: vars.$trs-03;
   &:hover {
-    background-color: colors.$thirdColor;
+    background-color: colors.$secondColor;
+    color: colors.$darkGrey;
   }
   &:focus {
     background-color: colors.$thirdColor;
     color: colors.$lightGray;
     box-shadow: 0rem 0rem 0rem colors.$black25;
+  }
+  .react-dev-icon {
+    margin-left: 0.25rem;
   }
 }
 
@@ -130,19 +91,13 @@
     max-width: 90%;
     width: 90%;
     padding: 1rem 0rem;
-
     .dev-name {
       font-size: 1.5rem;
     }
-
     .dev-para {
       width: 100%;
       padding-left: 0.25rem;
     }
-  }
-
-  .mobile-profile-fig {
-    width: 60%;
   }
 }
 
@@ -150,7 +105,7 @@
   .dev-buttons-section {
     @include mx.flexColCenter();
     gap: 1rem;
-    .about-btn {
+    .dev-btn {
       width: 100%;
     }
   }
@@ -162,9 +117,6 @@
     .dev-description {
       .dev-job {
         font-size: 2.75rem;
-      }
-      .dev-para {
-        font-size: 1rem;
       }
     }
   }
@@ -180,8 +132,8 @@
     width: 80%;
   }
 
-  .mobile-profile-fig {
-    width: 65%;
+  .dev-buttons-section {
+    flex-wrap: wrap;
   }
 }
 
@@ -189,14 +141,16 @@
 
 @media all and (min-width: 768px) and (max-width: 959px) {
 
-
-  .dev-description {
-    max-width: 75%;
-    width: 75%;
+  .dev-buttons-section {
+    gap: 2rem;
   }
 
-  .mobile-profile-fig {
-    width: 45%;
+  .dev-description {
+    max-width: 100%;
+    width: 100%;
+    .dev-btn {
+      width: 10rem;
+    }
   }
 
   .dev-btn {
@@ -218,32 +172,14 @@
     text-align: center;
   }
 
-  .dev-name, .dev-job, .dev-country {
+  .dev-name, .dev-job {
     text-align: center;
     margin-bottom: 0.75rem;
   }
 
-  .mobile-profile-fig {
-    display: flex;
-    padding: 0rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-
-    img {
-      width: 100%;
-    }   
-  }
-
-  .desktop-profile-fig {
-    display: none;
-  }
-
   .dev-buttons-section {
-    justify-content: space-evenly;
-
     .dev-btn {
       margin-right: 0rem;
-      font-size: 1.5rem;
     }
   }
 }

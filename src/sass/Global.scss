@@ -1,4 +1,4 @@
-@use './includes/colors' as colors;
+@use './includes/colors' as color;
 @use './includes/typography' as fonts;
 @use './includes/variables' as vars;
 
@@ -11,7 +11,7 @@
 }
 
 html {
-  background-color: colors.$bgColor;
+  background-color: color.$bgColor;
   scroll-behavior: smooth;
 }
 
@@ -20,8 +20,8 @@ main {
 }
 
 *::selection {
-  background-color: colors.$firstColor;
-  color: colors.$white;
+  background-color: color.$firstColor;
+  color: color.$white;
   text-shadow: none;
 }
 
@@ -46,9 +46,17 @@ p {
   font-family: "Ubuntu Sans Mono", monospace;
 }
 
+.text-white {
+  color: color.$white;
+}
+
 .breakline {
   width: 4rem;
-  border-top: 5px solid colors.$firstColor;
+  border-top: 5px solid color.$firstColor;
   border-radius: 3rem;
   margin-bottom: 3rem;
+}
+
+button {
+  font-weight: 700;
 }

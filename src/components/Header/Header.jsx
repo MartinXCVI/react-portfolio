@@ -24,6 +24,7 @@ function Header() {
     setIsMenuDisplayed(!isMenuDisplayed)
   }
 
+
   return (
     <header className='heading'>
       <section className='hero-section'>

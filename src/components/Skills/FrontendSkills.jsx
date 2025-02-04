@@ -12,33 +12,35 @@ import Astroicon from './Skills-Icons/Frontend-Icons/Astroicon';
 const FrontendSkills = () => {
   return (
     <>
-      <h3 data-aos="fade-right" data-aos-duration="1000">Frontend Development</h3>
+      <h3 className='text-white' data-aos="fade-right" data-aos-duration="1000">Frontend Development</h3>
       <section className='skills-container' data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
-        <SkillsCard 
-          skillName={"HTML"}
-          skillIcon={<HTMLicon />}
-        />
-        <SkillsCard 
-          skillName={"CSS"}
-          skillIcon={<CSSicon />}
-        />
-        <SkillsCard 
-          skillName={"JavaScript"}
-          skillIcon={<JavaScripticon />}
-        />
-        <SkillsCard 
-          skillName={"Bootstrap"}
-          skillIcon={<Bootstrapicon />}
-        />
+        <div className="skills-subcontainer">
+          <SkillsCard 
+            skillName={"HTML"}
+            skillIcon={<HTMLicon />}
+          />
+          <SkillsCard 
+            skillName={"CSS"}
+            skillIcon={<CSSicon />}
+          />
+          <SkillsCard 
+            skillName={"JavaScript"}
+            skillIcon={<JavaScripticon />}
+          />
+          <SkillsCard 
+            skillName={"Bootstrap"}
+            skillIcon={<Bootstrapicon />}
+          />
 
-        <SkillsCard 
-          skillName={"React"}
-          skillIcon={<Reacticon />}
-        />
-        <SkillsCard 
-          skillName={"Astro"}
-          skillIcon={<Astroicon />}
-        />
+          <SkillsCard 
+            skillName={"React"}
+            skillIcon={<Reacticon />}
+          />
+          <SkillsCard 
+            skillName={"Astro"}
+            skillIcon={<Astroicon />}
+          />
+        </div>
       </section>
     </>
   )

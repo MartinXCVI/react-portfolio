@@ -7,9 +7,9 @@
   width: 30%;
   @include mx.flexColCenter();
   padding: 1rem 0.5rem;
-  background-color: colors.$bgColor;
-  color: colors.$black15;
-  border: 1px solid colors.$weakRed;
+  background-color: colors.$black10;
+  color: colors.$white;
+  border: 1px solid colors.$thirdColor;
   border-radius: 0.5rem;
   box-shadow: 0rem 0.05rem 0.1rem colors.$black25;
   transition: vars.$trs-03;
@@ -34,7 +34,7 @@
     border-radius: 0.5rem;
     .project-img {
       width: 100%;
-      border: 1px solid colors.$weakRed;
+      border: 1px solid colors.$thirdColor;
       border-radius: 0.5rem;
       transition: vars.$trs-05;
       &:hover {
@@ -60,13 +60,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: colors.$secondColor;
+  background-color: colors.$firstColor;
   color: colors.$white;
   padding: 0.25rem 0.5rem;
   border-radius: 3rem;
   text-align: center;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   font-family: fonts.$ubuntuCond;
   transition: vars.$trs-02;
   box-shadow: 0rem 0.1rem 0.1rem colors.$black25;
@@ -75,7 +75,7 @@
   }
   &:focus {
     background-color: colors.$thirdColor;
-    color: colors.$black;
+    color: colors.$gray;
     box-shadow: 0rem 0rem 0rem colors.$black25;
   }
   .project-link-icon {
@@ -162,5 +162,12 @@
 
   .project-link {
     width: 6.5rem;
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1199px) {
+
+  .project-link {
+    width: 6.25rem;
   }
 }

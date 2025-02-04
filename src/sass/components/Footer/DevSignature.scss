@@ -4,20 +4,31 @@
 
 .dev-signature {
   padding: 0.5rem 1rem;
+  border: 1px solid colors.$firstColor;
   border-radius: 3rem;
   transition: vars.$trs-03;
+  color: colors.$white;
+  font-weight: 500;
   &:hover {
-    background-color: colors.$thirdColor;
-    color: colors.$white;
+    background-color: colors.$firstColor;
+    color: colors.$black;
   }
   &:hover .dev-github {
-    color: colors.$slateGray;
+    color: colors.$fourthColor;
   }
 }
 
 .dev-github {
-  color: colors.$firstColor;
+  color: colors.$fifthColor;
+  font-weight: 600;
+  transition: vars.$trs-03;
   &:focus {
-    color: colors.$darkSlate;
+    color: colors.$sixthColor;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .dev-signature {
+    font-size: 0.8rem;
   }
 }

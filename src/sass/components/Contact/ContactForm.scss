@@ -13,14 +13,14 @@
   width: 100%;
   @include mx.flexRowCenter();
   flex-wrap: wrap;
-  background-color: colors.$bgColor;
-  border: 1px solid colors.$weakRed;
+  background-color: colors.$black10;
+  border: 1px solid colors.$thirdColor;
   border-radius: 0.5rem;
   padding: 1.25rem;
   transition: vars.$trs-03;
   &:hover {
     border: 1px solid colors.$firstColor;
-    box-shadow: 0rem 0.05rem 0.1rem colors.$black25;
+    box-shadow: 0rem 0.05rem 0.1rem colors.$thirdColor;
   }
   &:hover .contact-fieldset {
     border-top: 1px solid colors.$firstColor;
@@ -30,8 +30,9 @@
 .contact-fieldset {
   width: 95%;
   @include mx.flexColCenter();
-  border-top: 1px solid colors.$weakRed;
+  border-top: 1px solid colors.$thirdColor;
   transition: vars.$trs-03;
+  color: colors.$white;
   .form-legend {
     width: auto;
     text-align: center;
@@ -39,6 +40,7 @@
     font-weight: 400;
     padding: 1rem 0.75rem;
     margin-bottom: 1.25rem;
+    color: colors.$white;
   }
 }
 
@@ -54,7 +56,12 @@
   margin-bottom: 1rem;
   .form-label {
     @include mx.flexRow(flex-start, center);
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
+    transition: vars.$trs-03;
+    &:hover {
+      color: colors.$firstColor;
+      cursor: pointer;
+    }
   }
 }
 
@@ -72,21 +79,23 @@
   width: 100%;
   font-size: 0.9rem;
   padding: 0.25rem;
-  border-bottom: 1px solid colors.$weakRed;
+  border-bottom: 1px solid colors.$thirdColor;
   border-radius: 0.25rem;
   transition: 0.2s linear all;
   margin-bottom: 0.25rem;
-  background-color: colors.$bgColor;
-  color: colors.$secondColor;
-
+  background-color: colors.$black10;
+  color: colors.$white;
   &:hover {
     border-bottom: 1px solid colors.$thirdColor;
   }
   &:focus {
     outline: 1px solid colors.$thirdColor;
     border-bottom: 1px solid transparent;
-    box-shadow: 0rem 0.1rem 0.1rem 0rem colors.$black25;
-    background-color: colors.$clearWhite;
+    box-shadow: 0rem 0.1rem 0.1rem 0rem colors.$thirdColor;
+    background-color: colors.$bgColor;
+  }
+  &::placeholder {
+    color: colors.$grey;
   }
 }
 
@@ -98,11 +107,11 @@
   width: 100%;
   font-size: 0.9rem;
   padding: 0.5rem;
-  border: 1px solid colors.$weakRed;
+  border: 1px solid colors.$thirdColor;
   border-radius: 0.25rem;
   resize: none;
-  background-color: colors.$bgColor;
-  color: colors.$thirdColor;
+  background-color: colors.$black10;
+  color: colors.$white;
   transition: vars.$trs-02;
   &:hover {
     border: 1px solid colors.$firstColor;
@@ -110,8 +119,8 @@
   &:focus {
     outline: 1px solid colors.$firstColor;
     border: 1px solid transparent;
-    background-color: colors.$clearWhite;
-    box-shadow: 0rem 0.1rem 0.1rem 0rem colors.$black25;
+    background-color: colors.$bgColor;
+    box-shadow: 0rem 0.1rem 0.1rem 0rem colors.$thirdColor;
   }
 }
 
@@ -120,6 +129,7 @@
   padding-inline: 0.25rem;
   .result-msg {
     font-size: 0.9rem;
+    color: colors.$white;
   }
 }
 

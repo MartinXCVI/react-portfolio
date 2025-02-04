@@ -12,9 +12,7 @@
     padding: 0.5rem;
     text-align: center;
     font-size: 0.9rem;
-    font-weight: 500;
-    color: colors.$white;
-    text-shadow: 0rem 0rem 0.1rem colors.$black25;
+    font-weight: 700;
     box-shadow: 0rem 0.1rem 0.1rem colors.$black25;
     transition: 0.2s linear all;
     cursor: pointer;
@@ -26,24 +24,26 @@
 }
 
 .send-btn {
-  background-color: colors.$thirdColor;
-
+  background-color: colors.$firstColor;
   &:hover {
     background-color: colors.$secondColor;
+    color: colors.$darkGrey;
+    text-shadow: 0rem 0rem 0rem colors.$black25;
   }
   &:focus {
-    background-color: colors.$secondColor;
+    background-color: colors.$white;
   }
 }
 
 .reset-btn {
-  background-color: colors.$slateGray;
-
+  background-color: colors.$fourthColor;
+  color: colors.$black;
   &:hover {
-    background-color: colors.$darkSlate;
+    background-color: colors.$fifthColor;
   }
   &:focus {
-    background-color: colors.$darkSlate;
+    background-color: colors.$sixthColor;
+    color: colors.$white;
   }
 }
 

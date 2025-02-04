@@ -24,14 +24,16 @@
     border-color: colors.$weakRed;
   }
   &:hover .skills-name {
-    color: colors.$black25;
+    color: colors.$black;
   }
 }
 
 .skills-name {
+  color: colors.$white;
   margin-bottom: 0.35rem;
   font-size: 0.8rem;
-  font-weight: 400;
+  font-weight: 600;
+  transition: vars.$trs-03;
 }
 
 /*---------- to 479px -----------*/

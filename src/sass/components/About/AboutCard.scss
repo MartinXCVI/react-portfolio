@@ -8,14 +8,14 @@
   @include mx.flexCol(vars.$evenly, flex-start);
   .about-card-title {
     margin-bottom: 2.5rem;
-    color: colors.$darkBlack;
+    color: colors.$white;
   }
   .about-article {
     margin-bottom: 2rem;
     p {
       width: 95%;
       margin-bottom: 1.25rem;
-      color: colors.$darkBlack;
+      color: colors.$white;
       font-weight: 600;
       font-size: 1.1rem;
       line-height: 1.35rem;
@@ -23,15 +23,11 @@
   }
 }
 
-.about-card-title, .about-article p {
-  text-shadow: 0rem 0rem 0.1rem colors.$white;
-}
-
 .about-article .about-article-para a {
-  color: colors.$secondColor;
+  color: colors.$firstColor;
   transition: vars.$trs-02;
   &:hover {
-    color: colors.$thirdColor;
+    color: colors.$secondColor;
   }
   &:focus {
     color: colors.$thirdColor;
@@ -48,18 +44,20 @@
   @include mx.flexRowCenter();
   margin-right: 4rem;
   text-align: center;
+  font-weight: 600;
   padding: 0.5rem;
   border-radius: 3rem;
-  background-color: colors.$secondColor;
+  background-color: colors.$firstColor;
   color: colors.$white;
   transition: vars.$trs-03;
   box-shadow: 0rem 0.1rem 0.1rem colors.$black25;
   &:hover {
-    background-color: colors.$thirdColor;
+    background-color: colors.$secondColor;
+    color: colors.$darkGrey;
   }
   &:focus {
     background-color: colors.$thirdColor;
-    color: colors.$black;
+    color: colors.$white;
     box-shadow: 0rem 0rem 0rem colors.$black25;
   }
 }

@@ -16,21 +16,24 @@
 
 .skills-container {
   @include mx.flexRowCenter();
-  flex-wrap: wrap;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
-  border: 1px solid colors.$firstColor;
-  border-radius: 0.5rem;
-  background-color: colors.$bgColor;
-  transition-property: background-color;
-  transition-duration: 0.3s linear all;
-  &:hover {
-    background-color: colors.$secondColor;
-  }
-  &:hover .skills-name {
-    color: colors.$white;
+  .skills-subcontainer {
+    width: 100%;
+    @include mx.flexRowCenter();
+    flex-wrap: wrap;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid colors.$firstColor;
+    border-radius: 0.5rem;
+    background-color: colors.$black15;
+    transition: 0.3s linear all !important;
+    &:hover {
+      background-color: colors.$secondColor;
+    }
+    &:hover .skills-name {
+      color: colors.$darkGray;
+    }
   }
 }
 

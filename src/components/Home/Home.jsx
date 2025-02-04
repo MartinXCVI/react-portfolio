@@ -13,13 +13,60 @@ function Home() {
     <section className='home-wrapper wrapper' id='home-wrapper'>
       <section className='home-section'>
         <article className='dev-description'>
-          <h2 className='dev-name' data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">Martín Daniel Aguirre</h2>
-          <h2 className='dev-job' data-aos="zoom-out" data-aos-duration="2500" data-aos-once="true">Full Stack Web Developer</h2>
+          {/* DEV NAME */}
+          <h2
+            className='dev-name'
+            data-aos="fade-down"
+            data-aos-duration="1500"
+            data-aos-once="true"
+          >
+            Martín Daniel Aguirre
+          </h2>
+          {/* DEV ROLE */}
+          <h2
+            className='dev-job'
+            data-aos="zoom-out"
+            data-aos-duration="2500"
+            data-aos-once="true"
+          >
+            Full Stack Web Developer
+          </h2>
+          {/* DEV BUTTONS SECTION */}
           <section className='dev-buttons-section' data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
-            <a className='about-btn' href={myGithub} target="_blank" title='Github'>Github <FaGithub className='react-dev-icon' /></a>
-            <a className='about-btn' href={myLinkedin} target="_blank" title='LinkedIn'>LinkedIn <FaLinkedin className='react-dev-icon' /></a>
-            <a className='about-btn' href={`mailto:${myEmail}`} title='Email'>Email <GoMail className='react-dev-icon' /></a>
-            <a className='about-btn' href="#portfolio-wrapper" title='Projects'>Projects <GrPersonalComputer className='react-dev-icon' /></a>
+            {/* GITHUB BUTTON */}
+            <a
+              className='dev-btn'
+              href={myGithub}
+              target="_blank"
+              title='Github'
+            >
+              Github <FaGithub className='react-dev-icon' />
+            </a>
+            {/* LINKEDIN BUTTON */}
+            <a
+              className='dev-btn'
+              href={myLinkedin}
+              target="_blank"
+              title='LinkedIn'
+            >
+              LinkedIn <FaLinkedin className='react-dev-icon' />
+            </a>
+            {/* EMAIL BUTTON */}
+            <a
+              className='dev-btn'
+              href={`mailto:${myEmail}`}
+              title='Email'
+            >
+              Email <GoMail className='react-dev-icon' />
+            </a>
+            {/* PROJECTS BUTTON */}
+            <a
+              className='dev-btn'
+              href="#portfolio-wrapper"
+              title='Projects'
+            >
+              Projects <GrPersonalComputer className='react-dev-icon' />
+            </a>
           </section>
         </article>
       </section>
