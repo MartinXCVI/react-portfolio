@@ -20,8 +20,8 @@ const AppProjects = (): JSX.Element => {
         aosDelay="300"
         title="Chat App"
         img="/images/covers/chat-app-cover.webp"
-        description="This MERN Chat App lets users connect in real-time with ease. Built with Socket.IO, TailwindCSS, and DaisyUI, it combines a modern, responsive design with smooth messaging features for an enjoyable and intuitive chatting experience"
-        repository="https://github.com/MartinXCVI/mern-chat-app"
+        description="This PERN Chat App lets users connect in real-time with ease. Built with Socket.IO, TailwindCSS, and DaisyUI, it combines a modern, responsive design with smooth messaging features for an enjoyable and intuitive chatting experience"
+        repository="https://github.com/MartinXCVI/chat-app-pern"
       />
       <WebAppCard
         aosAnim="zoom-out-down"

@@ -25,10 +25,6 @@ const BackendSkills = (): JSX.Element => {
       <section className='skills-container' data-aos="fade-left" data-aos-duration="1050" data-aos-once="true">
         <div className="skills-subcontainer">
           <SkillsCard 
-            skillName={"Java"}
-            skillIcon={<Javaicon />}
-          />
-          <SkillsCard 
             skillName={"MongoDB"}
             skillIcon={<MongoDBicon />}
           />

@@ -10,7 +10,7 @@ import Sassicon from './Skills-Icons/Additional-Icons/Sassicon';
 import Wordpressicon from './Skills-Icons/Additional-Icons/Wordpressicon';
 import Firebaseicon from './Skills-Icons/Additional-Icons/Firebaseicon';
 import Reduxicon from "./Skills-Icons/Additional-Icons/Reduxicon";
-import Tailwindicon from './Skills-Icons/Additional-Icons/Tailwindicon';
+import Pythonicon from "./Skills-Icons/Additional-Icons/Pythonicon";
 
 
 const AdditionalSkills = (): JSX.Element => {
@@ -55,8 +55,8 @@ const AdditionalSkills = (): JSX.Element => {
             skillIcon={<Reduxicon />}
           />
           <SkillsCard 
-            skillName={"Tailwind CSS"}
-            skillIcon={<Tailwindicon />}
+            skillName={"Python"}
+            skillIcon={<Pythonicon />}
           />
         </div>
       </section>

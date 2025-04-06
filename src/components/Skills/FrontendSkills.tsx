@@ -5,10 +5,12 @@ import SkillsCard from './SkillsCard';
 // Fronted icons
 import HTMLicon from './Skills-Icons/Frontend-Icons/HTMLicon';
 import CSSicon from './Skills-Icons/Frontend-Icons/CSSicon';
+import TypeScripticon from "./Skills-Icons/Frontend-Icons/TypeScripticon";
 import JavaScripticon from './Skills-Icons/Frontend-Icons/JavaScripticon';
 import Bootstrapicon from './Skills-Icons/Frontend-Icons/Bootstrapicon';
 import Reacticon from './Skills-Icons/Frontend-Icons/Reacticon';
 import Astroicon from './Skills-Icons/Frontend-Icons/Astroicon';
+import Tailwindicon from "./Skills-Icons/Additional-Icons/Tailwindicon";
 
 
 const FrontendSkills = (): JSX.Element => {
@@ -37,6 +39,10 @@ const FrontendSkills = (): JSX.Element => {
             skillIcon={<JavaScripticon />}
           />
           <SkillsCard 
+            skillName={"TypeScript"}
+            skillIcon={<TypeScripticon />}
+          />
+          <SkillsCard 
             skillName={"Bootstrap"}
             skillIcon={<Bootstrapicon />}
           />
@@ -48,6 +54,10 @@ const FrontendSkills = (): JSX.Element => {
           <SkillsCard 
             skillName={"Astro"}
             skillIcon={<Astroicon />}
+          />
+                    <SkillsCard 
+            skillName={"Tailwind CSS"}
+            skillIcon={<Tailwindicon />}
           />
         </div>
       </section>
