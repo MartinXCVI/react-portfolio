@@ -9,10 +9,10 @@ const AppProjects = (): JSX.Element => {
         aosAnim="zoom-out-down"
         aosDuration="1500"
         aosDelay="300"
-        title="WorkNotes"
-        img="/images/covers/worknotes-cover.webp"
-        description="WorkNotes is a full-stack app built with MERN and Redux that helps professionals stay organized. It’s designed for creating, editing, and managing notes effortlessly, combining different features with a clean, user-friendly interface"
-        repository="https://github.com/MartinXCVI/worknotes-api"
+        title="MERN Auth System"
+        img="/images/covers/mern-auth-system-cover.webp"
+        description="The MERN Auth System is a secure full-stack authentication app built with MERN and TypeScript. It enables users to sign up, log in, and verify their accounts, with an OTP-based password reset for recovering access."
+        repository="https://github.com/MartinXCVI/mern-auth-system"
       />
       <WebAppCard
         aosAnim="zoom-out-down"
@@ -20,17 +20,17 @@ const AppProjects = (): JSX.Element => {
         aosDelay="300"
         title="Chat App"
         img="/images/covers/chat-app-cover.webp"
-        description="This PERN Chat App lets users connect in real-time with ease. Built with Socket.IO, TailwindCSS, and DaisyUI, it combines a modern, responsive design with smooth messaging features for an enjoyable and intuitive chatting experience"
-        repository="https://github.com/MartinXCVI/chat-app-pern"
+        description="A MERN chat app to connect and share in real time. Built with Socket.IO, TailwindCSS, and DaisyUI, image uploads through Cloudinary, and secure authentication. Zustand for state management and Zod for input validation."
+        repository="https://github.com/MartinXCVI/mern-chat-app"
       />
       <WebAppCard
         aosAnim="zoom-out-down"
         aosDuration="1500"
         aosDelay="300"
-        title="Markdown Blog"
-        img="/images/covers/markdown-blog-cover.webp"
-        description="This markdown-powered blog, built with Astro, SASS, and JavaScript, keeps things simple and fast by using markdown files for posts. It’s sleek, responsive, and perfect for sharing ideas without the complexity of a database"
-        repository="https://github.com/MartinXCVI/astro-blog"
+        title="MDX Blog"
+        img="/images/covers/mdx-blog-cover.webp"
+        description="This MDX-powered blog, built with Next.js and TailwindCSS, keeps things fast and flexible by using MDX files for posts. Modern, practical and responsive. A good choice for sharing ideas without relying on a database."
+        repository="https://github.com/MartinXCVI/simple-next-mdx-blog"
       />
     </section>
   )
