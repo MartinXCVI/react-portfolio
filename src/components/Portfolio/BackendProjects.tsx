@@ -11,7 +11,7 @@ const BackendProjects = (): JSX.Element => {
         aosDelay="0" 
         title="Node.js Web Server"
         img="/images/covers/node-web-server-cover.webp"
-        description="This minimalist and lightweight Node.js web server was built from scratch without frameworks to ensure simplicity and efficiency. It’s a clean, flexible and scalable solution that can be adapted for APIs, web apps, or as a good and practical learning tool for beginner developers."
+        description="This minimalist and lightweight Node.js web server was built from scratch without frameworks to ensure simplicity and efficiency. It’s a clean, flexible and scalable solution that can be adapted for APIs, web apps, or as a practical learning tool for beginner developers."
         repository={"https://github.com/MartinXCVI/node-web-server"}
       />
       <BackCard
@@ -27,10 +27,10 @@ const BackendProjects = (): JSX.Element => {
         aosAnim="zoom-out-down"
         aosDuration="1500"
         aosDelay="0" 
-        title="Web Scraper"
-        img="/images/covers/web-scraper-cover.webp"
-        description="Using Node.js and Puppeteer, this web scraper automates data extraction from dynamic websites. It’s perfect for tasks like tracking prices or gathering statistics and serves as a versatile tool for simplifying repetitive or data-intensive backend workflows."
-        repository={"https://github.com/MartinXCVI/node-web-scraper"}
+        title="Password Manager"
+        img="/images/covers/password-manager-cover.webp"
+        description="A secure command-line password manager built with Python, featuring AES encryption, SHA-256 hashing, and a local database for safe credential storage. It provides password generation, retrieval, and management through a CLI industry-standard cryptographic practices."
+        repository={"https://github.com/MartinXCVI/password-manager"}
       />
     </section>
   )

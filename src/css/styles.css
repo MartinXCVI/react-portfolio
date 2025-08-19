@@ -751,7 +751,7 @@ button {
 }
 @media all and (min-width: 768px) and (max-width: 959px) {
   .project-div {
-    width: 45%;
+    width: 47%;
   }
   .project-link {
     width: 7rem;
